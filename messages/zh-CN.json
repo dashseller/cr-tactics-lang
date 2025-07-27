@@ -1,0 +1,466 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "使用 CR Tactics Builder 创建、分享、发布并寻找最强队伍。成为竞技场上的最后赢家！",
+      "Title": "CR 融合战术队伍构建器 | 皇室战争"
+    }
+  },
+  "COMPONENTS": {
+    "LAYOUT": {
+      "Footer": {
+        "AriaLabel": {
+          "Discord": "Discord",
+          "GoHome": "返回主页"
+        },
+        "Copyright": "版权所有 © {year} CR Tactics。保留所有权利。",
+        "Disclaimer": "本内容未经 Supercell 认可、赞助或批准，Supercell 对此不承担任何责任。更多信息请参阅",
+        "FanContentPolicy": "Supercell 粉丝内容政策",
+        "PrivacyPolicy": "隐私政策",
+        "SeeOur": "查看我们的",
+        "ForAdditionalDetails": "了解更多详情。"
+      },
+      "Header": {
+        "AriaLabel": {
+          "CloseMenu": "关闭菜单",
+          "OpenMenu": "打开菜单"
+        },
+        "ComingSoon": "即将推出",
+        "Discord": "Discord",
+        "Login": "登录",
+        "Tactics": "战术"
+      }
+    },
+    "TroopStats": {
+      "Critical": "暴击",
+      "Damage": "伤害",
+      "HitSpeed": "攻击速度",
+      "Range": "射程"
+    }
+  },
+  "CONFIGS": {
+    "RoutesConfig": {
+      "Builder": "模拟器",
+      "Builds": "阵容",
+      "Community": "社区",
+      "TierList": "评分",
+      "Wiki": "百科"
+    }
+  },
+  "MODULES": {
+    "AUTH": {
+      "UI": {
+        "SERVER": {
+          "EmailTemplates": {
+            "ResetPassword": {
+              "subject": "重置您的密码",
+              "title": "重置您的密码",
+              "message": "我们收到了重置您账号密码的请求。",
+              "buttonText": "重置密码",
+              "expiresIn": "此链接将在15分钟后过期。",
+              "ignoreMessage": "如果您没有请求重置密码，可以安全地忽略此邮件。可能是其他人误输入了您的邮箱地址。"
+            },
+            "AccountDeletion": {
+              "subject": "确认账号删除",
+              "title": "账号删除请求",
+              "message": "我们收到了删除您账号的请求。此操作无法撤销，将永久删除您的所有数据。",
+              "buttonText": "删除我的账号",
+              "expiresIn": "此链接将在15分钟后过期。",
+              "ignoreMessage": "如果您没有请求删除账号，可以安全地忽略此邮件。如果您认为您的账号已被盗用，请更改密码并联系客服。"
+            },
+            "SignInOTP": {
+              "subject": "您的登录验证码",
+              "title": "登录到 Turboitem",
+              "message": "您请求登录到 Turboitem。您的一次性验证码是：",
+              "expiresIn": "此验证码将在5分钟后过期。",
+              "ignoreMessage": "如果您没有请求此验证码，请忽略此邮件。"
+            },
+            "EmailVerification": {
+              "subject": "验证您的邮箱地址",
+              "title": "验证您的邮箱地址",
+              "message": "我们需要验证您的邮箱地址 {email} 才能访问您的账号。请在打开的浏览器窗口中输入以下验证码。",
+              "expiresIn": "此验证码将在5分钟后过期。",
+              "ignoreMessage": "如果您没有注册 Turboitem，可以安全地忽略此邮件。可能是其他人误输入了您的邮箱地址。",
+              "buttonText": "验证邮箱地址"
+            },
+            "EmailChange": {
+              "subject": "验证您的新邮箱地址",
+              "title": "验证您的新邮箱地址",
+              "message": "我们收到了将您的邮箱地址更改为 {email} 的请求。点击下方按钮以验证此新邮箱地址。",
+              "buttonText": "验证新邮箱",
+              "expiresIn": "此链接将在15分钟后过期。",
+              "ignoreMessage": "如果您没有请求更改邮箱地址，可以安全地忽略此邮件。如果您认为您的账号已被盗用，请更改密码并联系客服。"
+            }
+          }
+        },
+        "AuthLocalization": {
+          "missingCaptchaResponse": "缺少验证码响应",
+          "byContinuingYouAgree": "继续即表示您同意",
+          "protectedByRecaptcha": "本站点受 reCAPTCHA 保护。",
+          "termsOfService": "服务条款",
+          "privacyPolicy": "隐私政策",
+          "uploadAvatar": "上传头像",
+          "passwordTooLong": "密码过长",
+          "passwordTooShort": "密码过短",
+          "sessionExpired": "会话已过期",
+          "sessionNotFresh": "您的会话已过期，请重新登录。",
+          "passwordInvalid": "密码无效",
+          "invalidEmailOrPassword": "邮箱或密码无效",
+          "goBack": "返回",
+          "verifyYourEmailDescription": "请验证您的邮箱地址。请检查您的收件箱查看验证邮件。如果您没有收到邮件，请点击下方按钮重新发送。",
+          "verifyYourEmail": "验证您的邮箱",
+          "signInUsernamePlaceholder": "用户名或邮箱",
+          "usernamePlaceholder": "用户名",
+          "usernameInstructions": "请使用不超过32个字符。",
+          "usernameDescription": "输入您想用于登录的用户名。",
+          "username": "用户名",
+          "updatedSuccessfully": "更新成功",
+          "unlink": "解除关联",
+          "sendVerificationCode": "发送验证码",
+          "twoFactorTotpLabel": "使用您的身份验证器扫描二维码",
+          "twoFactorPrompt": "双重认证",
+          "twoFactorDisabled": "双重认证已禁用",
+          "twoFactorEnabled": "双重认证已启用",
+          "twoFactorEnableInstructions": "请输入您的密码以启用双重认证",
+          "twoFactorDisableInstructions": "请输入您的密码以禁用双重认证。",
+          "twoFactorCardDescription": "为您的账户添加额外的安全层。",
+          "twoFactorDescription": "请输入您的一次性密码以继续",
+          "twoFactorAction": "验证码",
+          "twoFactor": "双重认证",
+          "trustDevice": "信任此设备",
+          "switchAccount": "切换账户",
+          "security": "安全",
+          "save": "保存",
+          "settings": "设置",
+          "setPasswordDescription": "点击下方按钮接收邮件以设置您账户的密码。",
+          "setPassword": "设置密码",
+          "sessionsDescription": "管理您的活动会话并撤销访问权限。",
+          "sessions": "会话",
+          "signUpEmail": "请检查您的邮箱以获取验证链接。",
+          "signUpDescription": "输入您的信息以创建账户",
+          "signUpAction": "创建账户",
+          "signUp": "注册",
+          "signOut": "退出登录",
+          "signInWith": "使用以下方式登录",
+          "signInUsernameDescription": "输入您的用户名或邮箱以登录您的账户",
+          "signInDescription": "输入您的邮箱以登录您的账户",
+          "signInAction": "登录",
+          "signIn": "登录",
+          "apiKey": "API 密钥",
+          "deleteApiKeyConfirmation": "您确定要删除此 API 密钥吗？",
+          "deleteApiKey": "删除 API 密钥",
+          "revoke": "撤销",
+          "requestFailed": "请求失败",
+          "resetPasswordSuccess": "密码重置成功",
+          "resetPasswordInvalidToken": "无效的重置密码链接",
+          "resetPasswordDescription": "在下方输入您的新密码",
+          "resetPasswordAction": "保存新密码",
+          "resetPassword": "重置密码",
+          "resendVerificationEmail": "重新发送验证邮件",
+          "resendCode": "重新发送验证码",
+          "rememberMe": "记住我",
+          "recoverAccountDescription": "请输入备用码以访问您的账户",
+          "recoverAccountAction": "恢复账户",
+          "recoverAccount": "恢复账户",
+          "providersDescription": "将您的账户与第三方服务关联。",
+          "providers": "提供商",
+          "passwordsDoNotMatch": "密码不匹配",
+          "passwordRequired": "密码是必需的",
+          "passwordPlaceholder": "密码",
+          "password": "密码",
+          "create": "创建",
+          "noExpiration": "永不过期",
+          "expires": "过期时间",
+          "neverExpires": "永不过期",
+          "apiKeyCreatedDescription": "请复制您的 API 密钥并将其存储在安全的地方。出于安全原因，我们无法再次显示它。",
+          "apiKeyCreated": "API 密钥已创建",
+          "apiKeyNamePlaceholder": "新 API 密钥",
+          "createApiKeyDescription": "为您的 API 密钥输入一个唯一的名称以区分其他密钥。",
+          "createApiKey": "创建 API 密钥",
+          "apiKeysInstructions": "生成 API 密钥以编程方式访问您的账户。",
+          "apiKeysDescription": "管理您的 API 密钥以进行安全访问。",
+          "apiKeys": "API 密钥",
+          "passkeysInstructions": "无需密码即可安全访问您的账户。",
+          "passkeysDescription": "管理您的通行密钥以进行安全访问。",
+          "passkeys": "通行密钥",
+          "passkey": "通行密钥",
+          "orContinueWith": "或继续使用",
+          "oneTimePassword": "一次性密码",
+          "newPasswordRequired": "新密码是必需的",
+          "newPasswordPlaceholder": "新密码",
+          "newPassword": "新密码",
+          "namePlaceholder": "姓名",
+          "nameInstructions": "请使用不超过32个字符。",
+          "nameDescription": "请输入您的全名或显示名称。",
+          "name": "姓名",
+          "emailOTPVerificationSent": "请检查您的邮箱以获取验证码。",
+          "emailOTPDescription": "输入您的邮箱以接收验证码",
+          "emailOTPVerifyAction": "验证码",
+          "emailOTPSendAction": "发送验证码",
+          "emailOTP": "邮箱验证码",
+          "magicLinkEmail": "请检查您的邮箱以获取魔法链接",
+          "magicLinkDescription": "输入您的邮箱以接收魔法链接",
+          "magicLinkAction": "发送魔法链接",
+          "magicLink": "魔法链接",
+          "link": "关联",
+          "invalidTwoFactorCookie": "无效的双重认证 cookie",
+          "forgotPasswordLink": "忘记密码？",
+          "forgotPasswordEmail": "请检查您的邮箱以获取密码重置链接。",
+          "forgotPasswordDescription": "输入您的邮箱以重置密码",
+          "forgotPasswordAction": "发送重置链接",
+          "forgotPassword": "忘记密码",
+          "forgotAuthenticator": "忘记身份验证器？",
+          "isTheSame": "相同",
+          "isRequired": "是必需的",
+          "isInvalid": "无效",
+          "error": "错误",
+          "enable": "启用",
+          "emailVerification": "请检查您的邮箱以获取验证链接。",
+          "emailVerifyChange": "请检查您的邮箱以验证更改。",
+          "emailRequired": "邮箱地址是必需的",
+          "emailPlaceholder": "m@example.com",
+          "emailIsTheSame": "邮箱相同",
+          "emailInvalid": "邮箱地址无效",
+          "emailInstructions": "请输入有效的邮箱地址。",
+          "emailDescription": "输入您想用于登录的邮箱地址。",
+          "email": "邮箱",
+          "done": "完成",
+          "dontHaveAnAccount": "没有账户？",
+          "disabledCredentialsDescription": "选择一个提供商以登录您的账户",
+          "disable": "禁用",
+          "deleteAccountNotFresh": "您必须最近登录才能删除您的账户。",
+          "deleteAccountSuccess": "您的账户已被删除。",
+          "deleteAccountVerify": "请检查您的邮箱以验证账户删除。",
+          "deleteAccountInstructions": "请确认删除您的账户。此操作不可逆，请谨慎继续。",
+          "deleteAccountDescription": "永久删除您的账户及其所有内容。此操作不可逆，请谨慎继续。",
+          "deleteAccount": "删除账户",
+          "deleteAvatar": "删除头像",
+          "delete": "删除",
+          "currentSession": "当前会话",
+          "currentPasswordPlaceholder": "当前密码",
+          "currentPassword": "当前密码",
+          "continue": "继续",
+          "copyAllCodes": "复制所有代码",
+          "copyToClipboard": "复制到剪贴板",
+          "copiedToClipboard": "已复制到剪贴板",
+          "continueWithAuthenticator": "继续使用身份验证器",
+          "confirmPasswordRequired": "确认密码是必需的",
+          "confirmPasswordPlaceholder": "确认密码",
+          "confirmPassword": "确认密码",
+          "changePasswordSuccess": "您的密码已更改。",
+          "changePasswordInstructions": "请使用至少8个字符。",
+          "changePasswordDescription": "输入您的当前密码和新密码。",
+          "changePassword": "更改密码",
+          "cancel": "取消",
+          "backupCodeAction": "恢复账户",
+          "backupCode": "备用码",
+          "backupCodePlaceholder": "输入您的一个备用码。一旦使用，每个代码只能使用一次，使用后将失效。",
+          "backupCodesDescription": "将这些备用码保存在安全的地方。如果您丢失了双重认证方式，可以使用它们来访问您的账户。",
+          "backupCodes": "备用码",
+          "backupCodeRequired": "备用码是必需的",
+          "avatarInstructions": "头像是可选的，但强烈建议使用。",
+          "avatarDescription": "点击头像从您的文件中上传自定义头像。",
+          "avatar": "头像",
+          "alreadyHaveAnAccount": "已有账户？",
+          "addPasskey": "添加通行密钥",
+          "addAccount": "添加账户",
+          "accountsInstructions": "登录到其他账户。",
+          "accountsDescription": "管理您当前登录的账户。",
+          "accounts": "账户",
+          "account": "账户"
+        }
+      },
+      "FORMS": {
+        "ChangeEmailDialogue": {
+          "Title": "更改邮箱"
+        },
+        "ChangePasswordDialogue": {
+          "Title": "更改密码"
+        },
+        "ChangeUsernameDialogue": {
+          "Title": "更改用户名"
+        }
+      }
+    },
+    "BUILDER": {
+      "UI": {
+        "BOARD": {
+          "GameBoard": {
+            "AddTroop": "添加部队",
+            "SelectRuler": "选择统帅"
+          },
+          "ResetDialog": {
+            "Cancel": "取消",
+            "Description": "这将移除棋盘上的所有部队并重置你的圣水数量。你的羁绊和统帅选择将被清除。",
+            "Reset": "重置",
+            "Title": "重置游戏棋盘？"
+          },
+          "SaveBuildDialog": {
+            "Title": "保存您的阵容",
+            "Description": "为您的阵容命名并添加描述，与社区分享",
+            "Preview": "阵容预览",
+            "Name": "阵容名称",
+            "NamePlaceholder": "例如：部落复仇者速攻",
+            "NameRequired": "阵容名称是必需的",
+            "DescriptionLabel": "描述",
+            "DescriptionPlaceholder": "描述您的策略、连击或使用这个阵容的技巧...",
+            "DescriptionHint": "支持 Markdown 格式",
+            "YouTubeUrl": "YouTube 视频链接",
+            "Tier": "等级评分",
+            "Publish": "发布阵容",
+            "PublishDescription": "让所有人都能看到这个阵容",
+            "DraftDescription": "保存为草稿，仅对您可见",
+            "Cancel": "取消",
+            "PublishBuild": "发布阵容",
+            "SaveDraft": "保存为草稿",
+            "BuildPublished": "阵容发布成功！",
+            "BuildSaved": "阵容已保存为草稿",
+            "SaveError": "保存阵容失败",
+            "RulerRequired": "请选择一个统帅",
+            "TroopsRequired": "请至少添加一个部队到棋盘"
+          }
+        },
+        "RULER": {
+          "RulerSelectorDrawer": {
+            "SelectRuler": "选择统帅"
+          }
+        },
+        "SYNERGY": {
+          "SynergyPanel": {
+            "ActiveSynergies": "激活的羁绊",
+            "NoActiveSynergies": "没有激活的羁绊"
+          }
+        },
+        "VIEW": {
+          "TroopsBuilder": {
+            "BoardIsFull": "棋盘已满",
+            "RemoveTroops": "移除一些部队以放置新的部队。",
+            "SelectATroop": "选择一个部队"
+          }
+        }
+      }
+    },
+    "BUILDS": {
+      "UI": {
+        "BuildDetailView": {
+          "Tier": "等级",
+          "Views": "浏览",
+          "Composition": "阵容组成",
+          "Description": "策略指南",
+          "Video": "视频指南"
+        },
+        "CommentSection": {
+          "Comments": "评论",
+          "AddComment": "添加评论...",
+          "PostComment": "发表评论",
+          "CommentPosted": "评论发表成功",
+          "CommentError": "发表评论失败",
+          "CommentDeleted": "评论已删除",
+          "DeleteError": "删除评论失败",
+          "SignInRequired": "请登录后评论",
+          "ConfirmDelete": "确定要删除这条评论吗？",
+          "NoComments": "还没有评论，成为第一个评论的人吧！",
+          "Unknown": "未知"
+        }
+      }
+    },
+    "COMPS": {
+      "TeamCompCard": {
+        "Tier": "梯度"
+      },
+      "TeamCompsList": {
+        "AllCards": "所有卡牌",
+        "AllTraits": "所有特性",
+        "Cards": "卡牌",
+        "NoCompositionsFound": "没有找到符合筛选条件的队伍组合。",
+        "Search": "搜索...",
+        "Traits": "特性"
+      }
+    },
+    "HOME": {
+      "SECTIONS": {
+        "HeroSection": {
+          "Description": "寻找、构建并分享最佳合合奇兵队伍阵容，称霸竞技场。",
+          "IntroducingBuilder": "隆重推出构建器",
+          "StartBuilding": "开始创建",
+          "Title": "最全面的合合奇兵工具",
+          "ViewComps": "查看阵容"
+        }
+      }
+    },
+    "TIER_LIST": {
+      "UI": {
+        "TIER": {
+          "TierRow": {
+            "ClickToAddTroops": "点击添加部队",
+            "DropTroopsHere": "将部队拖放到这里"
+          }
+        },
+        "VIEW": {
+          "TierListMaker": {
+            "AddTroopsToTier": "添加部队到 {tier} 级",
+            "Reset": "重置"
+          }
+        }
+      }
+    },
+    "TROOPS": {
+      "UI": {
+        "TroopSelect": {
+          "AllTraits": "所有特性",
+          "SearchTroops": "搜索部队...",
+          "Trait": "特性",
+          "All": "全部"
+        }
+      }
+    },
+    "WIKI": {
+      "UI": {
+        "TROOP": {
+          "TroopFilters": {
+            "AllTraits": "所有特性",
+            "DPS": "秒伤",
+            "ElixirCost": "圣水消耗",
+            "HP": "生命值",
+            "Name": "名称",
+            "SearchTroops": "搜索部队...",
+            "Sort": "排序",
+            "SortByDPS": "排序：秒伤",
+            "SortByElixirCost": "排序：圣水消耗",
+            "SortByHP": "排序：生命值",
+            "SortByName": "排序：名称",
+            "Trait": "特性",
+            "All": "全部"
+          }
+        }
+      }
+    }
+  },
+  "PAGES": {
+    "Builder": {
+      "Description": "在皇室战争的融合战术模式中理论构建和规划你的回合",
+      "Title": "队伍构建器"
+    },
+    "Comps": {
+      "Description": "寻找皇室战争融合战术的最佳队伍组合",
+      "Title": "队伍阵容"
+    },
+    "TierList": {
+      "Description": "寻找皇室战争融合战术的最佳队伍组合",
+      "Title": "梯度榜"
+    },
+    "Wiki": {
+      "Description": "浏览所有可用部队及其属性",
+      "Title": "部队图鉴"
+    },
+    "Waitlist": {
+      "Title": "您已加入等待名单！",
+      "Description": "欢迎来到 CR Tactics！我们正在为您准备一些特别的东西。",
+      "Message": "当 App 准备就绪时，我们会通过电子邮件通知您。 早期的支持者将解锁一个神秘礼物。",
+      "WhileYouWait": "在您等待期间：",
+      "JoinDiscord": "加入我们的 Discord 社区",
+      "ExploreBuilder": "探索队伍构建器",
+      "BrowseTroops": "浏览部队图鉴",
+      "ThankYou": "感谢您的耐心等待！🎉"
+    }
+  }
+}

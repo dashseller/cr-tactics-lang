@@ -1,0 +1,466 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "CR Tactics Builderで最強のチームを作成、共有、投稿、発見しましょう。アリーナで最後まで生き残れ！",
+      "Title": "CRマージタクティクスチームビルダー | クラッシュ・ロワイヤル"
+    }
+  },
+  "COMPONENTS": {
+    "LAYOUT": {
+      "Footer": {
+        "AriaLabel": {
+          "Discord": "Discord",
+          "GoHome": "ホームに戻る"
+        },
+        "Copyright": "Copyright © {year} CR Tactics. All rights reserved.",
+        "Disclaimer": "このコンテンツはSupercellによって承認、後援、承認されたものではなく、Supercellはこれに対して責任を負いません。詳細については以下をご覧ください",
+        "FanContentPolicy": "Supercellのファンコンテンツポリシー",
+        "PrivacyPolicy": "プライバシーポリシー",
+        "SeeOur": "詳細については",
+        "ForAdditionalDetails": "をご覧ください。"
+      },
+      "Header": {
+        "AriaLabel": {
+          "CloseMenu": "メニューを閉じる",
+          "OpenMenu": "メニューを開く"
+        },
+        "ComingSoon": "近日公開",
+        "Discord": "Discord",
+        "Login": "ログイン",
+        "Tactics": "タクティクス"
+      }
+    },
+    "TroopStats": {
+      "Critical": "クリティカル",
+      "Damage": "ダメージ",
+      "HitSpeed": "攻撃速度",
+      "Range": "射程"
+    }
+  },
+  "CONFIGS": {
+    "RoutesConfig": {
+      "Builder": "ビルダー",
+      "Builds": "編成",
+      "Community": "コミュニティ",
+      "TierList": "ティアリスト",
+      "Wiki": "Wiki"
+    }
+  },
+  "MODULES": {
+    "AUTH": {
+      "UI": {
+        "SERVER": {
+          "EmailTemplates": {
+            "ResetPassword": {
+              "subject": "パスワードをリセット",
+              "title": "パスワードをリセット",
+              "message": "アカウントのパスワードリセットのリクエストを受け取りました。",
+              "buttonText": "パスワードをリセット",
+              "expiresIn": "このリンクは15分後に期限切れになります。",
+              "ignoreMessage": "パスワードのリセットをリクエストしていない場合は、このメールを無視しても安全です。誰かがあなたのメールアドレスを誤って入力した可能性があります。"
+            },
+            "AccountDeletion": {
+              "subject": "アカウント削除の確認",
+              "title": "アカウント削除リクエスト",
+              "message": "アカウントの削除リクエストを受け取りました。この操作は元に戻すことができず、すべてのデータが永久に削除されます。",
+              "buttonText": "アカウントを削除",
+              "expiresIn": "このリンクは15分後に期限切れになります。",
+              "ignoreMessage": "アカウントの削除をリクエストしていない場合は、このメールを無視しても安全です。アカウントが侵害されたと思われる場合は、パスワードを変更してサポートにお問い合わせください。"
+            },
+            "SignInOTP": {
+              "subject": "ログイン用OTPコード",
+              "title": "Turboitemにサインイン",
+              "message": "Turboitemへのサインインをリクエストしました。ワンタイムコードは次のとおりです：",
+              "expiresIn": "このコードは5分後に期限切れになります。",
+              "ignoreMessage": "このコードをリクエストしていない場合は、このメッセージを無視してください。"
+            },
+            "EmailVerification": {
+              "subject": "メールアドレスを確認",
+              "title": "メールアドレスを確認",
+              "message": "アカウントにアクセスする前に、メールアドレス {email} を確認する必要があります。開いているブラウザウィンドウに以下のコードを入力してください。",
+              "expiresIn": "このコードは5分後に期限切れになります。",
+              "ignoreMessage": "Turboitemに登録していない場合は、このメールを無視しても安全です。誰かがあなたのメールアドレスを誤って入力した可能性があります。",
+              "buttonText": "メールアドレスを確認"
+            },
+            "EmailChange": {
+              "subject": "新しいメールアドレスを確認",
+              "title": "新しいメールアドレスを確認",
+              "message": "メールアドレスを {email} に変更するリクエストを受け取りました。下のボタンをクリックして、この新しいメールアドレスを確認してください。",
+              "buttonText": "新しいメールを確認",
+              "expiresIn": "このリンクは15分後に期限切れになります。",
+              "ignoreMessage": "メールアドレスの変更をリクエストしていない場合は、このメールを無視しても安全です。アカウントが侵害されたと思われる場合は、パスワードを変更してサポートにお問い合わせください。"
+            }
+          }
+        },
+        "AuthLocalization": {
+          "missingCaptchaResponse": "CAPTCHA応答がありません",
+          "byContinuingYouAgree": "続行することで、以下に同意したことになります",
+          "protectedByRecaptcha": "このサイトはreCAPTCHAによって保護されています。",
+          "termsOfService": "利用規約",
+          "privacyPolicy": "プライバシーポリシー",
+          "uploadAvatar": "アバターをアップロード",
+          "passwordTooLong": "パスワードが長すぎます",
+          "passwordTooShort": "パスワードが短すぎます",
+          "sessionExpired": "セッションの有効期限が切れました",
+          "sessionNotFresh": "セッションが新しくありません。もう一度サインインしてください。",
+          "passwordInvalid": "無効なパスワード",
+          "invalidEmailOrPassword": "無効なメールアドレスまたはパスワード",
+          "goBack": "戻る",
+          "verifyYourEmailDescription": "メールアドレスを確認してください。受信トレイに確認メールがないか確認してください。メールが届いていない場合は、下のボタンをクリックして再送信してください。",
+          "verifyYourEmail": "メールアドレスを確認",
+          "signInUsernamePlaceholder": "ユーザー名またはメールアドレス",
+          "usernamePlaceholder": "ユーザー名",
+          "usernameInstructions": "最大32文字まで使用してください。",
+          "usernameDescription": "ログインに使用するユーザー名を入力してください。",
+          "username": "ユーザー名",
+          "updatedSuccessfully": "正常に更新されました",
+          "unlink": "リンク解除",
+          "sendVerificationCode": "確認コードを送信",
+          "twoFactorTotpLabel": "認証アプリでQRコードをスキャン",
+          "twoFactorPrompt": "二要素認証",
+          "twoFactorDisabled": "二要素認証が無効になりました",
+          "twoFactorEnabled": "二要素認証が有効になりました",
+          "twoFactorEnableInstructions": "2FAを有効にするにはパスワードを入力してください",
+          "twoFactorDisableInstructions": "2FAを無効にするにはパスワードを入力してください。",
+          "twoFactorCardDescription": "アカウントに追加のセキュリティレイヤーを追加します。",
+          "twoFactorDescription": "続行するにはワンタイムパスワードを入力してください",
+          "twoFactorAction": "コードを確認",
+          "twoFactor": "二要素認証",
+          "trustDevice": "このデバイスを信頼する",
+          "switchAccount": "アカウントを切り替える",
+          "security": "セキュリティ",
+          "save": "保存",
+          "settings": "設定",
+          "setPasswordDescription": "下のボタンをクリックして、アカウントのパスワードを設定するメールを受け取ってください。",
+          "setPassword": "パスワードを設定",
+          "sessionsDescription": "アクティブなセッションを管理し、アクセスを取り消します。",
+          "sessions": "セッション",
+          "signUpEmail": "確認リンクについてはメールを確認してください。",
+          "signUpDescription": "アカウントを作成するために情報を入力してください",
+          "signUpAction": "アカウントを作成",
+          "signUp": "サインアップ",
+          "signOut": "サインアウト",
+          "signInWith": "次でサインイン",
+          "signInUsernameDescription": "アカウントにログインするには、ユーザー名またはメールアドレスを入力してください",
+          "signInDescription": "アカウントにログインするには、メールアドレスを入力してください",
+          "signInAction": "ログイン",
+          "signIn": "サインイン",
+          "apiKey": "APIキー",
+          "deleteApiKeyConfirmation": "このAPIキーを削除してもよろしいですか？",
+          "deleteApiKey": "APIキーを削除",
+          "revoke": "取り消す",
+          "requestFailed": "リクエストが失敗しました",
+          "resetPasswordSuccess": "パスワードが正常にリセットされました",
+          "resetPasswordInvalidToken": "無効なパスワードリセットリンク",
+          "resetPasswordDescription": "新しいパスワードを入力してください",
+          "resetPasswordAction": "新しいパスワードを保存",
+          "resetPassword": "パスワードをリセット",
+          "resendVerificationEmail": "確認メールを再送信",
+          "resendCode": "コードを再送信",
+          "rememberMe": "ログイン状態を保持",
+          "recoverAccountDescription": "アカウントにアクセスするにはバックアップコードを入力してください",
+          "recoverAccountAction": "アカウントを回復",
+          "recoverAccount": "アカウントを回復",
+          "providersDescription": "アカウントをサードパーティサービスと接続します。",
+          "providers": "プロバイダー",
+          "passwordsDoNotMatch": "パスワードが一致しません",
+          "passwordRequired": "パスワードは必須です",
+          "passwordPlaceholder": "パスワード",
+          "password": "パスワード",
+          "create": "作成",
+          "noExpiration": "期限なし",
+          "expires": "有効期限",
+          "neverExpires": "期限なし",
+          "apiKeyCreatedDescription": "APIキーをコピーして安全な場所に保管してください。セキュリティ上の理由から、再度表示することはできません。",
+          "apiKeyCreated": "APIキーが作成されました",
+          "apiKeyNamePlaceholder": "新しいAPIキー",
+          "createApiKeyDescription": "他のキーと区別するために、APIキーに一意の名前を入力してください。",
+          "createApiKey": "APIキーを作成",
+          "apiKeysInstructions": "プログラムでアカウントにアクセスするためのAPIキーを生成します。",
+          "apiKeysDescription": "安全なアクセスのためにAPIキーを管理します。",
+          "apiKeys": "APIキー",
+          "passkeysInstructions": "パスワードなしでアカウントに安全にアクセスします。",
+          "passkeysDescription": "安全なアクセスのためにパスキーを管理します。",
+          "passkeys": "パスキー",
+          "passkey": "パスキー",
+          "orContinueWith": "または続行",
+          "oneTimePassword": "ワンタイムパスワード",
+          "newPasswordRequired": "新しいパスワードは必須です",
+          "newPasswordPlaceholder": "新しいパスワード",
+          "newPassword": "新しいパスワード",
+          "namePlaceholder": "名前",
+          "nameInstructions": "最大32文字まで使用してください。",
+          "nameDescription": "フルネームまたは表示名を入力してください。",
+          "name": "名前",
+          "emailOTPVerificationSent": "確認コードについてはメールを確認してください。",
+          "emailOTPDescription": "コードを受け取るにはメールアドレスを入力してください",
+          "emailOTPVerifyAction": "コードを確認",
+          "emailOTPSendAction": "コードを送信",
+          "emailOTP": "メールコード",
+          "magicLinkEmail": "マジックリンクについてはメールを確認してください",
+          "magicLinkDescription": "マジックリンクを受け取るにはメールアドレスを入力してください",
+          "magicLinkAction": "マジックリンクを送信",
+          "magicLink": "マジックリンク",
+          "link": "リンク",
+          "invalidTwoFactorCookie": "無効な二要素認証Cookie",
+          "forgotPasswordLink": "パスワードをお忘れですか？",
+          "forgotPasswordEmail": "パスワードリセットリンクについてはメールを確認してください。",
+          "forgotPasswordDescription": "パスワードをリセットするにはメールアドレスを入力してください",
+          "forgotPasswordAction": "リセットリンクを送信",
+          "forgotPassword": "パスワードを忘れた",
+          "forgotAuthenticator": "認証アプリを忘れましたか？",
+          "isTheSame": "同じです",
+          "isRequired": "必須です",
+          "isInvalid": "無効です",
+          "error": "エラー",
+          "enable": "有効化",
+          "emailVerification": "確認リンクについてはメールを確認してください。",
+          "emailVerifyChange": "変更を確認するにはメールを確認してください。",
+          "emailRequired": "メールアドレスは必須です",
+          "emailPlaceholder": "m@example.com",
+          "emailIsTheSame": "メールは同じです",
+          "emailInvalid": "メールアドレスが無効です",
+          "emailInstructions": "有効なメールアドレスを入力してください。",
+          "emailDescription": "ログインに使用するメールアドレスを入力してください。",
+          "email": "メール",
+          "done": "完了",
+          "dontHaveAnAccount": "アカウントをお持ちでないですか？",
+          "disabledCredentialsDescription": "アカウントにログインするプロバイダーを選択してください",
+          "disable": "無効化",
+          "deleteAccountNotFresh": "アカウントを削除するには、最近ログインしている必要があります。",
+          "deleteAccountSuccess": "アカウントが削除されました。",
+          "deleteAccountVerify": "アカウントの削除を確認するにはメールを確認してください。",
+          "deleteAccountInstructions": "アカウントの削除を確認してください。この操作は元に戻すことができないため、慎重に進めてください。",
+          "deleteAccountDescription": "アカウントとそのすべてのコンテンツを永久に削除します。この操作は元に戻すことができないため、慎重に進めてください。",
+          "deleteAccount": "アカウントを削除",
+          "deleteAvatar": "アバターを削除",
+          "delete": "削除",
+          "currentSession": "現在のセッション",
+          "currentPasswordPlaceholder": "現在のパスワード",
+          "currentPassword": "現在のパスワード",
+          "continue": "続行",
+          "copyAllCodes": "すべてのコードをコピー",
+          "copyToClipboard": "クリップボードにコピー",
+          "copiedToClipboard": "クリップボードにコピーしました",
+          "continueWithAuthenticator": "認証アプリで続行",
+          "confirmPasswordRequired": "パスワードの確認は必須です",
+          "confirmPasswordPlaceholder": "パスワードを確認",
+          "confirmPassword": "パスワードを確認",
+          "changePasswordSuccess": "パスワードが変更されました。",
+          "changePasswordInstructions": "最低8文字を使用してください。",
+          "changePasswordDescription": "現在のパスワードと新しいパスワードを入力してください。",
+          "changePassword": "パスワードを変更",
+          "cancel": "キャンセル",
+          "backupCodeAction": "アカウントを回復",
+          "backupCode": "バックアップコード",
+          "backupCodePlaceholder": "バックアップコードの1つを入力してください。使用後、各コードは一度しか使用できず、使用後は無効になります。",
+          "backupCodesDescription": "これらのバックアップコードを安全な場所に保存してください。二要素認証方法を失った場合、アカウントにアクセスするために使用できます。",
+          "backupCodes": "バックアップコード",
+          "backupCodeRequired": "バックアップコードは必須です",
+          "avatarInstructions": "アバターはオプションですが、強く推奨されます。",
+          "avatarDescription": "アバターをクリックして、ファイルからカスタムアバターをアップロードしてください。",
+          "avatar": "アバター",
+          "alreadyHaveAnAccount": "すでにアカウントをお持ちですか？",
+          "addPasskey": "パスキーを追加",
+          "addAccount": "アカウントを追加",
+          "accountsInstructions": "追加のアカウントにサインインします。",
+          "accountsDescription": "現在サインインしているアカウントを管理します。",
+          "accounts": "アカウント",
+          "account": "アカウント"
+        }
+      },
+      "FORMS": {
+        "ChangeEmailDialogue": {
+          "Title": "メールを変更"
+        },
+        "ChangePasswordDialogue": {
+          "Title": "パスワードを変更"
+        },
+        "ChangeUsernameDialogue": {
+          "Title": "ユーザー名を変更"
+        }
+      }
+    },
+    "BUILDER": {
+      "UI": {
+        "BOARD": {
+          "GameBoard": {
+            "AddTroop": "ユニットを追加",
+            "SelectRuler": "ルーラーを選択"
+          },
+          "ResetDialog": {
+            "Cancel": "キャンセル",
+            "Description": "これによりボード上のすべてのユニットが削除され、エリクサーカウントがリセットされます。シナジーとルーラーの選択もクリアされます。",
+            "Reset": "リセット",
+            "Title": "ゲームボードをリセットしますか？"
+          },
+          "SaveBuildDialog": {
+            "Title": "ビルドを保存",
+            "Description": "ビルドに名前と説明を付けてコミュニティと共有しましょう",
+            "Preview": "ビルドプレビュー",
+            "Name": "ビルド名",
+            "NamePlaceholder": "例：クランアベンジャーラッシュ",
+            "NameRequired": "ビルド名は必須です",
+            "DescriptionLabel": "説明",
+            "DescriptionPlaceholder": "戦略、コンボ、このビルドをプレイするためのヒントを説明してください...",
+            "DescriptionHint": "Markdown形式をサポート",
+            "YouTubeUrl": "YouTube動画URL",
+            "Tier": "ティア評価",
+            "Publish": "ビルドを公開",
+            "PublishDescription": "このビルドを全員に公開する",
+            "DraftDescription": "下書きとして保存、あなたのみ閲覧可能",
+            "Cancel": "キャンセル",
+            "PublishBuild": "ビルドを公開",
+            "SaveDraft": "下書きとして保存",
+            "BuildPublished": "ビルドが正常に公開されました！",
+            "BuildSaved": "ビルドが下書きとして保存されました",
+            "SaveError": "ビルドの保存に失敗しました",
+            "RulerRequired": "ルーラーを選択してください",
+            "TroopsRequired": "ボードに少なくとも1つのユニットを追加してください"
+          }
+        },
+        "RULER": {
+          "RulerSelectorDrawer": {
+            "SelectRuler": "ルーラーを選択"
+          }
+        },
+        "SYNERGY": {
+          "SynergyPanel": {
+            "ActiveSynergies": "アクティブシナジー",
+            "NoActiveSynergies": "アクティブなシナジーはありません"
+          }
+        },
+        "VIEW": {
+          "TroopsBuilder": {
+            "BoardIsFull": "ボードが満杯です",
+            "RemoveTroops": "新しいユニットを配置するには、いくつかのユニットを削除してください。",
+            "SelectATroop": "ユニットを選択"
+          }
+        }
+      }
+    },
+    "BUILDS": {
+      "UI": {
+        "BuildDetailView": {
+          "Tier": "ティア",
+          "Views": "閲覧数",
+          "Composition": "構成",
+          "Description": "戦略ガイド",
+          "Video": "動画ガイド"
+        },
+        "CommentSection": {
+          "Comments": "コメント",
+          "AddComment": "コメントを追加...",
+          "PostComment": "コメントを投稿",
+          "CommentPosted": "コメントが正常に投稿されました",
+          "CommentError": "コメントの投稿に失敗しました",
+          "CommentDeleted": "コメントが削除されました",
+          "DeleteError": "コメントの削除に失敗しました",
+          "SignInRequired": "コメントするにはサインインしてください",
+          "ConfirmDelete": "このコメントを削除してもよろしいですか？",
+          "NoComments": "まだコメントがありません。最初にコメントしてください！",
+          "Unknown": "不明"
+        }
+      }
+    },
+    "COMPS": {
+      "TeamCompCard": {
+        "Tier": "ティア"
+      },
+      "TeamCompsList": {
+        "AllCards": "すべてのカード",
+        "AllTraits": "すべての特性",
+        "Cards": "カード",
+        "NoCompositionsFound": "フィルターに一致するチーム構成が見つかりません。",
+        "Search": "検索...",
+        "Traits": "特性"
+      }
+    },
+    "HOME": {
+      "SECTIONS": {
+        "HeroSection": {
+          "Description": "最高のマージタクティクスチーム編成を見つけ、構築し、共有してアリーナを支配しましょう。",
+          "IntroducingBuilder": "ビルダーを紹介",
+          "StartBuilding": "構築を開始",
+          "Title": "マージタクティクスのための最高のツール",
+          "ViewComps": "編成を見る"
+        }
+      }
+    },
+    "TIER_LIST": {
+      "UI": {
+        "TIER": {
+          "TierRow": {
+            "ClickToAddTroops": "クリックしてユニットを追加",
+            "DropTroopsHere": "ここにユニットをドロップ"
+          }
+        },
+        "VIEW": {
+          "TierListMaker": {
+            "AddTroopsToTier": "{tier}にユニットを追加",
+            "Reset": "リセット"
+          }
+        }
+      }
+    },
+    "TROOPS": {
+      "UI": {
+        "TroopSelect": {
+          "AllTraits": "すべての特性",
+          "SearchTroops": "ユニットを検索...",
+          "Trait": "特性",
+          "All": "すべて"
+        }
+      }
+    },
+    "WIKI": {
+      "UI": {
+        "TROOP": {
+          "TroopFilters": {
+            "AllTraits": "すべての特性",
+            "DPS": "DPS",
+            "ElixirCost": "エリクサーコスト",
+            "HP": "HP",
+            "Name": "名前",
+            "SearchTroops": "ユニットを検索...",
+            "Sort": "並べ替え",
+            "SortByDPS": "並べ替え：DPS",
+            "SortByElixirCost": "並べ替え：エリクサーコスト",
+            "SortByHP": "並べ替え：HP",
+            "SortByName": "並べ替え：名前",
+            "Trait": "特性",
+            "All": "すべて"
+          }
+        }
+      }
+    }
+  },
+  "PAGES": {
+    "Builder": {
+      "Description": "クラッシュ・ロワイヤルのマージタクティクスモードで理論構築とラウンドを計画",
+      "Title": "チームビルダー"
+    },
+    "Comps": {
+      "Description": "クラッシュ・ロワイヤルのマージタクティクスで最高のチーム編成を見つける",
+      "Title": "チーム編成"
+    },
+    "TierList": {
+      "Description": "クラッシュ・ロワイヤルのマージタクティクスで最高のチーム編成を見つける",
+      "Title": "ティアリスト"
+    },
+    "Wiki": {
+      "Description": "利用可能なすべてのユニットとそのステータスを閲覧",
+      "Title": "ユニット図鑑"
+    },
+    "Waitlist": {
+      "Title": "ウェイトリストに追加されました！",
+      "Description": "CR Tacticsへようこそ！特別なものを準備しています。",
+      "Message": "アプリの準備ができたらメールでお知らせします。早期サポーターは特別なミステリーギフトをアンロックできます。",
+      "WhileYouWait": "お待ちいただいている間：",
+      "JoinDiscord": "Discordコミュニティに参加",
+      "ExploreBuilder": "チームビルダーを探索",
+      "BrowseTroops": "ユニット図鑑を閲覧",
+      "ThankYou": "お待ちいただきありがとうございます！🎉"
+    }
+  }
+}

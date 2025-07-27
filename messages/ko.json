@@ -1,0 +1,466 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "CR Tactics Builder로 최강의 팀을 만들고, 공유하고, 게시하고, 찾아보세요. 아레나에서 최후의 승자가 되세요!",
+      "Title": "CR 머지 택틱스 팀 빌더 | 클래시 로얄"
+    }
+  },
+  "COMPONENTS": {
+    "LAYOUT": {
+      "Footer": {
+        "AriaLabel": {
+          "Discord": "Discord",
+          "GoHome": "홈으로 이동"
+        },
+        "Copyright": "Copyright © {year} CR Tactics. All rights reserved.",
+        "Disclaimer": "이 콘텐츠는 Supercell에 의해 제휴, 보증, 후원 또는 구체적으로 승인되지 않았으며 Supercell은 이에 대해 책임지지 않습니다. 자세한 내용은 다음을 참조하세요",
+        "FanContentPolicy": "Supercell 팬 콘텐츠 정책",
+        "PrivacyPolicy": "개인정보 보호정책",
+        "SeeOur": "자세한 내용은",
+        "ForAdditionalDetails": "을 참조하세요."
+      },
+      "Header": {
+        "AriaLabel": {
+          "CloseMenu": "메뉴 닫기",
+          "OpenMenu": "메뉴 열기"
+        },
+        "ComingSoon": "곧 출시",
+        "Discord": "Discord",
+        "Login": "로그인",
+        "Tactics": "택틱스"
+      }
+    },
+    "TroopStats": {
+      "Critical": "치명타",
+      "Damage": "데미지",
+      "HitSpeed": "공격 속도",
+      "Range": "사거리"
+    }
+  },
+  "CONFIGS": {
+    "RoutesConfig": {
+      "Builder": "빌더",
+      "Builds": "덱 구성",
+      "Community": "커뮤니티",
+      "TierList": "티어 리스트",
+      "Wiki": "위키"
+    }
+  },
+  "MODULES": {
+    "AUTH": {
+      "UI": {
+        "SERVER": {
+          "EmailTemplates": {
+            "ResetPassword": {
+              "subject": "비밀번호 재설정",
+              "title": "비밀번호 재설정",
+              "message": "계정의 비밀번호 재설정 요청을 받았습니다.",
+              "buttonText": "비밀번호 재설정",
+              "expiresIn": "이 링크는 15분 후에 만료됩니다.",
+              "ignoreMessage": "비밀번호 재설정을 요청하지 않으셨다면 이 이메일을 안전하게 무시하실 수 있습니다. 다른 사람이 실수로 귀하의 이메일 주소를 입력했을 수 있습니다."
+            },
+            "AccountDeletion": {
+              "subject": "계정 삭제 확인",
+              "title": "계정 삭제 요청",
+              "message": "계정 삭제 요청을 받았습니다. 이 작업은 되돌릴 수 없으며 모든 데이터가 영구적으로 삭제됩니다.",
+              "buttonText": "내 계정 삭제",
+              "expiresIn": "이 링크는 15분 후에 만료됩니다.",
+              "ignoreMessage": "계정 삭제를 요청하지 않으셨다면 이 이메일을 안전하게 무시하실 수 있습니다. 계정이 해킹당했다고 생각되면 비밀번호를 변경하고 지원팀에 문의하세요."
+            },
+            "SignInOTP": {
+              "subject": "로그인 OTP 코드",
+              "title": "Turboitem에 로그인",
+              "message": "Turboitem에 로그인을 요청하셨습니다. 일회용 코드는 다음과 같습니다:",
+              "expiresIn": "이 코드는 5분 후에 만료됩니다.",
+              "ignoreMessage": "이 코드를 요청하지 않으셨다면 이 메시지를 무시하세요."
+            },
+            "EmailVerification": {
+              "subject": "이메일 주소 확인",
+              "title": "이메일 주소 확인",
+              "message": "계정에 액세스하기 전에 이메일 주소 {email}을 확인해야 합니다. 열려 있는 브라우저 창에 아래 코드를 입력하세요.",
+              "expiresIn": "이 코드는 5분 후에 만료됩니다.",
+              "ignoreMessage": "Turboitem에 가입하지 않으셨다면 이 이메일을 안전하게 무시하실 수 있습니다. 다른 사람이 실수로 귀하의 이메일 주소를 입력했을 수 있습니다.",
+              "buttonText": "이메일 주소 확인"
+            },
+            "EmailChange": {
+              "subject": "새 이메일 주소 확인",
+              "title": "새 이메일 주소 확인",
+              "message": "이메일 주소를 {email}로 변경하는 요청을 받았습니다. 아래 버튼을 클릭하여 이 새 이메일 주소를 확인하세요.",
+              "buttonText": "새 이메일 확인",
+              "expiresIn": "이 링크는 15분 후에 만료됩니다.",
+              "ignoreMessage": "이메일 주소 변경을 요청하지 않으셨다면 이 이메일을 안전하게 무시하실 수 있습니다. 계정이 해킹당했다고 생각되면 비밀번호를 변경하고 지원팀에 문의하세요."
+            }
+          }
+        },
+        "AuthLocalization": {
+          "missingCaptchaResponse": "CAPTCHA 응답 누락",
+          "byContinuingYouAgree": "계속 진행하면 다음에 동의하는 것입니다",
+          "protectedByRecaptcha": "이 사이트는 reCAPTCHA로 보호됩니다.",
+          "termsOfService": "서비스 약관",
+          "privacyPolicy": "개인정보 보호정책",
+          "uploadAvatar": "아바타 업로드",
+          "passwordTooLong": "비밀번호가 너무 깁니다",
+          "passwordTooShort": "비밀번호가 너무 짧습니다",
+          "sessionExpired": "세션이 만료되었습니다",
+          "sessionNotFresh": "세션이 최신이 아닙니다. 다시 로그인하세요.",
+          "passwordInvalid": "잘못된 비밀번호",
+          "invalidEmailOrPassword": "잘못된 이메일 또는 비밀번호",
+          "goBack": "뒤로 가기",
+          "verifyYourEmailDescription": "이메일 주소를 확인하세요. 받은 편지함에서 확인 이메일을 확인하세요. 이메일을 받지 못하셨다면 아래 버튼을 클릭하여 다시 보내세요.",
+          "verifyYourEmail": "이메일 확인",
+          "signInUsernamePlaceholder": "사용자명 또는 이메일",
+          "usernamePlaceholder": "사용자명",
+          "usernameInstructions": "최대 32자까지 사용하세요.",
+          "usernameDescription": "로그인에 사용할 사용자명을 입력하세요.",
+          "username": "사용자명",
+          "updatedSuccessfully": "성공적으로 업데이트되었습니다",
+          "unlink": "연결 해제",
+          "sendVerificationCode": "확인 코드 보내기",
+          "twoFactorTotpLabel": "인증 앱으로 QR 코드 스캔",
+          "twoFactorPrompt": "2단계 인증",
+          "twoFactorDisabled": "2단계 인증이 비활성화되었습니다",
+          "twoFactorEnabled": "2단계 인증이 활성화되었습니다",
+          "twoFactorEnableInstructions": "2FA를 활성화하려면 비밀번호를 입력하세요",
+          "twoFactorDisableInstructions": "2FA를 비활성화하려면 비밀번호를 입력하세요.",
+          "twoFactorCardDescription": "계정에 추가 보안 계층을 추가합니다.",
+          "twoFactorDescription": "계속하려면 일회용 비밀번호를 입력하세요",
+          "twoFactorAction": "코드 확인",
+          "twoFactor": "2단계 인증",
+          "trustDevice": "이 기기 신뢰",
+          "switchAccount": "계정 전환",
+          "security": "보안",
+          "save": "저장",
+          "settings": "설정",
+          "setPasswordDescription": "아래 버튼을 클릭하여 계정 비밀번호 설정을 위한 이메일을 받으세요.",
+          "setPassword": "비밀번호 설정",
+          "sessionsDescription": "활성 세션을 관리하고 액세스를 취소합니다.",
+          "sessions": "세션",
+          "signUpEmail": "확인 링크는 이메일을 확인하세요.",
+          "signUpDescription": "계정을 만들려면 정보를 입력하세요",
+          "signUpAction": "계정 만들기",
+          "signUp": "가입하기",
+          "signOut": "로그아웃",
+          "signInWith": "다음으로 로그인",
+          "signInUsernameDescription": "계정에 로그인하려면 사용자명 또는 이메일을 입력하세요",
+          "signInDescription": "계정에 로그인하려면 이메일을 입력하세요",
+          "signInAction": "로그인",
+          "signIn": "로그인",
+          "apiKey": "API 키",
+          "deleteApiKeyConfirmation": "이 API 키를 삭제하시겠습니까?",
+          "deleteApiKey": "API 키 삭제",
+          "revoke": "취소",
+          "requestFailed": "요청 실패",
+          "resetPasswordSuccess": "비밀번호가 성공적으로 재설정되었습니다",
+          "resetPasswordInvalidToken": "잘못된 비밀번호 재설정 링크",
+          "resetPasswordDescription": "아래에 새 비밀번호를 입력하세요",
+          "resetPasswordAction": "새 비밀번호 저장",
+          "resetPassword": "비밀번호 재설정",
+          "resendVerificationEmail": "확인 이메일 다시 보내기",
+          "resendCode": "코드 다시 보내기",
+          "rememberMe": "로그인 상태 유지",
+          "recoverAccountDescription": "계정에 액세스하려면 백업 코드를 입력하세요",
+          "recoverAccountAction": "계정 복구",
+          "recoverAccount": "계정 복구",
+          "providersDescription": "타사 서비스와 계정을 연결합니다.",
+          "providers": "제공자",
+          "passwordsDoNotMatch": "비밀번호가 일치하지 않습니다",
+          "passwordRequired": "비밀번호는 필수입니다",
+          "passwordPlaceholder": "비밀번호",
+          "password": "비밀번호",
+          "create": "만들기",
+          "noExpiration": "만료 없음",
+          "expires": "만료",
+          "neverExpires": "만료되지 않음",
+          "apiKeyCreatedDescription": "API 키를 복사하여 안전한 곳에 보관하세요. 보안상의 이유로 다시 표시할 수 없습니다.",
+          "apiKeyCreated": "API 키가 생성되었습니다",
+          "apiKeyNamePlaceholder": "새 API 키",
+          "createApiKeyDescription": "다른 키와 구별하기 위해 API 키의 고유한 이름을 입력하세요.",
+          "createApiKey": "API 키 만들기",
+          "apiKeysInstructions": "프로그래밍 방식으로 계정에 액세스하기 위한 API 키를 생성합니다.",
+          "apiKeysDescription": "안전한 액세스를 위해 API 키를 관리합니다.",
+          "apiKeys": "API 키",
+          "passkeysInstructions": "비밀번호 없이 계정에 안전하게 액세스합니다.",
+          "passkeysDescription": "안전한 액세스를 위해 패스키를 관리합니다.",
+          "passkeys": "패스키",
+          "passkey": "패스키",
+          "orContinueWith": "또는 다음으로 계속",
+          "oneTimePassword": "일회용 비밀번호",
+          "newPasswordRequired": "새 비밀번호는 필수입니다",
+          "newPasswordPlaceholder": "새 비밀번호",
+          "newPassword": "새 비밀번호",
+          "namePlaceholder": "이름",
+          "nameInstructions": "최대 32자까지 사용하세요.",
+          "nameDescription": "전체 이름 또는 표시 이름을 입력하세요.",
+          "name": "이름",
+          "emailOTPVerificationSent": "확인 코드는 이메일을 확인하세요.",
+          "emailOTPDescription": "코드를 받으려면 이메일을 입력하세요",
+          "emailOTPVerifyAction": "코드 확인",
+          "emailOTPSendAction": "코드 보내기",
+          "emailOTP": "이메일 코드",
+          "magicLinkEmail": "매직 링크는 이메일을 확인하세요",
+          "magicLinkDescription": "매직 링크를 받으려면 이메일을 입력하세요",
+          "magicLinkAction": "매직 링크 보내기",
+          "magicLink": "매직 링크",
+          "link": "링크",
+          "invalidTwoFactorCookie": "잘못된 2단계 인증 쿠키",
+          "forgotPasswordLink": "비밀번호를 잊으셨나요?",
+          "forgotPasswordEmail": "비밀번호 재설정 링크는 이메일을 확인하세요.",
+          "forgotPasswordDescription": "비밀번호를 재설정하려면 이메일을 입력하세요",
+          "forgotPasswordAction": "재설정 링크 보내기",
+          "forgotPassword": "비밀번호 찾기",
+          "forgotAuthenticator": "인증 앱을 잊으셨나요?",
+          "isTheSame": "동일합니다",
+          "isRequired": "필수입니다",
+          "isInvalid": "유효하지 않습니다",
+          "error": "오류",
+          "enable": "활성화",
+          "emailVerification": "확인 링크는 이메일을 확인하세요.",
+          "emailVerifyChange": "변경 사항을 확인하려면 이메일을 확인하세요.",
+          "emailRequired": "이메일 주소는 필수입니다",
+          "emailPlaceholder": "m@example.com",
+          "emailIsTheSame": "이메일이 동일합니다",
+          "emailInvalid": "이메일 주소가 유효하지 않습니다",
+          "emailInstructions": "유효한 이메일 주소를 입력하세요.",
+          "emailDescription": "로그인에 사용할 이메일 주소를 입력하세요.",
+          "email": "이메일",
+          "done": "완료",
+          "dontHaveAnAccount": "계정이 없으신가요?",
+          "disabledCredentialsDescription": "계정에 로그인할 제공자를 선택하세요",
+          "disable": "비활성화",
+          "deleteAccountNotFresh": "계정을 삭제하려면 최근에 로그인해야 합니다.",
+          "deleteAccountSuccess": "계정이 삭제되었습니다.",
+          "deleteAccountVerify": "계정 삭제를 확인하려면 이메일을 확인하세요.",
+          "deleteAccountInstructions": "계정 삭제를 확인하세요. 이 작업은 되돌릴 수 없으므로 신중히 진행하세요.",
+          "deleteAccountDescription": "계정과 모든 콘텐츠를 영구적으로 삭제합니다. 이 작업은 되돌릴 수 없으므로 신중히 진행하세요.",
+          "deleteAccount": "계정 삭제",
+          "deleteAvatar": "아바타 삭제",
+          "delete": "삭제",
+          "currentSession": "현재 세션",
+          "currentPasswordPlaceholder": "현재 비밀번호",
+          "currentPassword": "현재 비밀번호",
+          "continue": "계속",
+          "copyAllCodes": "모든 코드 복사",
+          "copyToClipboard": "클립보드에 복사",
+          "copiedToClipboard": "클립보드에 복사됨",
+          "continueWithAuthenticator": "인증 앱으로 계속",
+          "confirmPasswordRequired": "비밀번호 확인은 필수입니다",
+          "confirmPasswordPlaceholder": "비밀번호 확인",
+          "confirmPassword": "비밀번호 확인",
+          "changePasswordSuccess": "비밀번호가 변경되었습니다.",
+          "changePasswordInstructions": "최소 8자를 사용하세요.",
+          "changePasswordDescription": "현재 비밀번호와 새 비밀번호를 입력하세요.",
+          "changePassword": "비밀번호 변경",
+          "cancel": "취소",
+          "backupCodeAction": "계정 복구",
+          "backupCode": "백업 코드",
+          "backupCodePlaceholder": "백업 코드 중 하나를 입력하세요. 사용 후 각 코드는 한 번만 사용할 수 있으며 사용 후 무효화됩니다.",
+          "backupCodesDescription": "이 백업 코드를 안전한 곳에 저장하세요. 2단계 인증 방법을 잃어버린 경우 계정에 액세스하는 데 사용할 수 있습니다.",
+          "backupCodes": "백업 코드",
+          "backupCodeRequired": "백업 코드는 필수입니다",
+          "avatarInstructions": "아바타는 선택 사항이지만 강력히 권장됩니다.",
+          "avatarDescription": "아바타를 클릭하여 파일에서 사용자 정의 아바타를 업로드하세요.",
+          "avatar": "아바타",
+          "alreadyHaveAnAccount": "이미 계정이 있으신가요?",
+          "addPasskey": "패스키 추가",
+          "addAccount": "계정 추가",
+          "accountsInstructions": "추가 계정에 로그인합니다.",
+          "accountsDescription": "현재 로그인한 계정을 관리합니다.",
+          "accounts": "계정",
+          "account": "계정"
+        }
+      },
+      "FORMS": {
+        "ChangeEmailDialogue": {
+          "Title": "이메일 변경"
+        },
+        "ChangePasswordDialogue": {
+          "Title": "비밀번호 변경"
+        },
+        "ChangeUsernameDialogue": {
+          "Title": "사용자명 변경"
+        }
+      }
+    },
+    "BUILDER": {
+      "UI": {
+        "BOARD": {
+          "GameBoard": {
+            "AddTroop": "부대 추가",
+            "SelectRuler": "통치자 선택"
+          },
+          "ResetDialog": {
+            "Cancel": "취소",
+            "Description": "보드의 모든 부대를 제거하고 엘릭서 카운트를 재설정합니다. 시너지와 통치자 선택도 지워집니다.",
+            "Reset": "재설정",
+            "Title": "게임 보드를 재설정하시겠습니까?"
+          },
+          "SaveBuildDialog": {
+            "Title": "빌드 저장",
+            "Description": "빌드에 이름과 설명을 추가하여 커뮤니티와 공유하세요",
+            "Preview": "빌드 미리보기",
+            "Name": "빌드 이름",
+            "NamePlaceholder": "예: 클랜 어벤저 러시",
+            "NameRequired": "빌드 이름은 필수입니다",
+            "DescriptionLabel": "설명",
+            "DescriptionPlaceholder": "이 빌드를 플레이하기 위한 전략, 콤보 또는 팁을 설명하세요...",
+            "DescriptionHint": "마크다운 형식 지원",
+            "YouTubeUrl": "YouTube 동영상 URL",
+            "Tier": "티어 등급",
+            "Publish": "빌드 게시",
+            "PublishDescription": "이 빌드를 모든 사람이 볼 수 있게 합니다",
+            "DraftDescription": "초안으로 저장, 본인만 볼 수 있음",
+            "Cancel": "취소",
+            "PublishBuild": "빌드 게시",
+            "SaveDraft": "초안으로 저장",
+            "BuildPublished": "빌드가 성공적으로 게시되었습니다!",
+            "BuildSaved": "빌드가 초안으로 저장되었습니다",
+            "SaveError": "빌드 저장 실패",
+            "RulerRequired": "통치자를 선택하세요",
+            "TroopsRequired": "보드에 최소 하나의 부대를 추가하세요"
+          }
+        },
+        "RULER": {
+          "RulerSelectorDrawer": {
+            "SelectRuler": "통치자 선택"
+          }
+        },
+        "SYNERGY": {
+          "SynergyPanel": {
+            "ActiveSynergies": "활성 시너지",
+            "NoActiveSynergies": "활성 시너지 없음"
+          }
+        },
+        "VIEW": {
+          "TroopsBuilder": {
+            "BoardIsFull": "보드가 가득 찼습니다",
+            "RemoveTroops": "새 부대를 배치하려면 일부 부대를 제거하세요.",
+            "SelectATroop": "부대 선택"
+          }
+        }
+      }
+    },
+    "BUILDS": {
+      "UI": {
+        "BuildDetailView": {
+          "Tier": "티어",
+          "Views": "조회수",
+          "Composition": "구성",
+          "Description": "전략 가이드",
+          "Video": "비디오 가이드"
+        },
+        "CommentSection": {
+          "Comments": "댓글",
+          "AddComment": "댓글 추가...",
+          "PostComment": "댓글 게시",
+          "CommentPosted": "댓글이 성공적으로 게시되었습니다",
+          "CommentError": "댓글 게시 실패",
+          "CommentDeleted": "댓글이 삭제되었습니다",
+          "DeleteError": "댓글 삭제 실패",
+          "SignInRequired": "댓글을 작성하려면 로그인하세요",
+          "ConfirmDelete": "이 댓글을 삭제하시겠습니까?",
+          "NoComments": "아직 댓글이 없습니다. 첫 번째로 댓글을 작성하세요!",
+          "Unknown": "알 수 없음"
+        }
+      }
+    },
+    "COMPS": {
+      "TeamCompCard": {
+        "Tier": "티어"
+      },
+      "TeamCompsList": {
+        "AllCards": "모든 카드",
+        "AllTraits": "모든 특성",
+        "Cards": "카드",
+        "NoCompositionsFound": "필터와 일치하는 팀 구성을 찾을 수 없습니다.",
+        "Search": "검색...",
+        "Traits": "특성"
+      }
+    },
+    "HOME": {
+      "SECTIONS": {
+        "HeroSection": {
+          "Description": "최고의 머지 택틱스 팀 구성을 찾고, 만들고, 공유하여 아레나를 지배하세요.",
+          "IntroducingBuilder": "빌더 소개",
+          "StartBuilding": "빌드 시작",
+          "Title": "머지 택틱스를 위한 최고의 도구",
+          "ViewComps": "덱 구성 보기"
+        }
+      }
+    },
+    "TIER_LIST": {
+      "UI": {
+        "TIER": {
+          "TierRow": {
+            "ClickToAddTroops": "클릭하여 부대 추가",
+            "DropTroopsHere": "여기에 부대를 드롭"
+          }
+        },
+        "VIEW": {
+          "TierListMaker": {
+            "AddTroopsToTier": "{tier}에 부대 추가",
+            "Reset": "재설정"
+          }
+        }
+      }
+    },
+    "TROOPS": {
+      "UI": {
+        "TroopSelect": {
+          "AllTraits": "모든 특성",
+          "SearchTroops": "부대 검색...",
+          "Trait": "특성",
+          "All": "전체"
+        }
+      }
+    },
+    "WIKI": {
+      "UI": {
+        "TROOP": {
+          "TroopFilters": {
+            "AllTraits": "모든 특성",
+            "DPS": "DPS",
+            "ElixirCost": "엘릭서 비용",
+            "HP": "HP",
+            "Name": "이름",
+            "SearchTroops": "부대 검색...",
+            "Sort": "정렬",
+            "SortByDPS": "정렬: DPS",
+            "SortByElixirCost": "정렬: 엘릭서 비용",
+            "SortByHP": "정렬: HP",
+            "SortByName": "정렬: 이름",
+            "Trait": "특성",
+            "All": "전체"
+          }
+        }
+      }
+    }
+  },
+  "PAGES": {
+    "Builder": {
+      "Description": "클래시 로얄의 머지 택틱스 모드에서 이론을 구축하고 라운드를 계획하세요",
+      "Title": "팀 빌더"
+    },
+    "Comps": {
+      "Description": "클래시 로얄 머지 택틱스를 위한 최고의 팀 구성을 찾아보세요",
+      "Title": "팀 구성"
+    },
+    "TierList": {
+      "Description": "클래시 로얄 머지 택틱스를 위한 최고의 팀 구성을 찾아보세요",
+      "Title": "티어 리스트"
+    },
+    "Wiki": {
+      "Description": "사용 가능한 모든 부대와 능력치 찾아보기",
+      "Title": "부대 도서관"
+    },
+    "Waitlist": {
+      "Title": "대기자 명단에 등록되었습니다!",
+      "Description": "CR Tactics에 오신 것을 환영합니다! 특별한 것을 준비하고 있습니다.",
+      "Message": "앱이 준비되면 이메일로 알려드리겠습니다. 초기 지원자는 특별한 미스터리 선물을 잠금 해제할 수 있습니다.",
+      "WhileYouWait": "기다리는 동안:",
+      "JoinDiscord": "Discord 커뮤니티 가입",
+      "ExploreBuilder": "팀 빌더 탐색",
+      "BrowseTroops": "부대 도서관 둘러보기",
+      "ThankYou": "기다려 주셔서 감사합니다! 🎉"
+    }
+  }
+}

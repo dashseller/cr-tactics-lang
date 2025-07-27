@@ -1,0 +1,466 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "使用 CR Tactics Builder 創建、分享、發布並尋找最強隊伍。成為競技場上的最後贏家！",
+      "Title": "CR 融合戰術隊伍構建器 | 皇室戰爭"
+    }
+  },
+  "COMPONENTS": {
+    "LAYOUT": {
+      "Footer": {
+        "AriaLabel": {
+          "Discord": "Discord",
+          "GoHome": "返回主頁"
+        },
+        "Copyright": "版權所有 © {year} CR Tactics。保留所有權利。",
+        "Disclaimer": "本內容未經 Supercell 認可、贊助或批准，Supercell 對此不承擔任何責任。更多資訊請參閱",
+        "FanContentPolicy": "Supercell 粉絲內容政策",
+        "PrivacyPolicy": "隱私政策",
+        "SeeOur": "查看我們的",
+        "ForAdditionalDetails": "了解更多詳情。"
+      },
+      "Header": {
+        "AriaLabel": {
+          "CloseMenu": "關閉選單",
+          "OpenMenu": "開啟選單"
+        },
+        "ComingSoon": "即將推出",
+        "Discord": "Discord",
+        "Login": "登入",
+        "Tactics": "戰術"
+      }
+    },
+    "TroopStats": {
+      "Critical": "暴擊",
+      "Damage": "傷害",
+      "HitSpeed": "攻擊速度",
+      "Range": "射程"
+    }
+  },
+  "CONFIGS": {
+    "RoutesConfig": {
+      "Builder": "模擬器",
+      "Builds": "陣容",
+      "Community": "社群",
+      "TierList": "評分",
+      "Wiki": "百科"
+    }
+  },
+  "MODULES": {
+    "AUTH": {
+      "UI": {
+        "SERVER": {
+          "EmailTemplates": {
+            "ResetPassword": {
+              "subject": "重設您的密碼",
+              "title": "重設您的密碼",
+              "message": "我們收到了重設您帳號密碼的請求。",
+              "buttonText": "重設密碼",
+              "expiresIn": "此連結將在15分鐘後過期。",
+              "ignoreMessage": "如果您沒有請求重設密碼，可以安全地忽略此郵件。可能是其他人誤輸入了您的電子郵件地址。"
+            },
+            "AccountDeletion": {
+              "subject": "確認帳號刪除",
+              "title": "帳號刪除請求",
+              "message": "我們收到了刪除您帳號的請求。此操作無法復原，將永久刪除您的所有資料。",
+              "buttonText": "刪除我的帳號",
+              "expiresIn": "此連結將在15分鐘後過期。",
+              "ignoreMessage": "如果您沒有請求刪除帳號，可以安全地忽略此郵件。如果您認為您的帳號已被盜用，請更改密碼並聯繫客服。"
+            },
+            "SignInOTP": {
+              "subject": "您的登入驗證碼",
+              "title": "登入到 Turboitem",
+              "message": "您請求登入到 Turboitem。您的一次性驗證碼是：",
+              "expiresIn": "此驗證碼將在5分鐘後過期。",
+              "ignoreMessage": "如果您沒有請求此驗證碼，請忽略此郵件。"
+            },
+            "EmailVerification": {
+              "subject": "驗證您的電子郵件地址",
+              "title": "驗證您的電子郵件地址",
+              "message": "我們需要驗證您的電子郵件地址 {email} 才能訪問您的帳號。請在開啟的瀏覽器視窗中輸入以下驗證碼。",
+              "expiresIn": "此驗證碼將在5分鐘後過期。",
+              "ignoreMessage": "如果您沒有註冊 Turboitem，可以安全地忽略此郵件。可能是其他人誤輸入了您的電子郵件地址。",
+              "buttonText": "驗證電子郵件地址"
+            },
+            "EmailChange": {
+              "subject": "驗證您的新電子郵件地址",
+              "title": "驗證您的新電子郵件地址",
+              "message": "我們收到了將您的電子郵件地址更改為 {email} 的請求。點擊下方按鈕以驗證此新電子郵件地址。",
+              "buttonText": "驗證新電子郵件",
+              "expiresIn": "此連結將在15分鐘後過期。",
+              "ignoreMessage": "如果您沒有請求更改電子郵件地址，可以安全地忽略此郵件。如果您認為您的帳號已被盜用，請更改密碼並聯繫客服。"
+            }
+          }
+        },
+        "AuthLocalization": {
+          "missingCaptchaResponse": "缺少驗證碼回應",
+          "byContinuingYouAgree": "繼續即表示您同意",
+          "protectedByRecaptcha": "本站點受 reCAPTCHA 保護。",
+          "termsOfService": "服務條款",
+          "privacyPolicy": "隱私政策",
+          "uploadAvatar": "上傳頭像",
+          "passwordTooLong": "密碼過長",
+          "passwordTooShort": "密碼過短",
+          "sessionExpired": "工作階段已過期",
+          "sessionNotFresh": "您的工作階段已過期，請重新登入。",
+          "passwordInvalid": "密碼無效",
+          "invalidEmailOrPassword": "電子郵件或密碼無效",
+          "goBack": "返回",
+          "verifyYourEmailDescription": "請驗證您的電子郵件地址。請檢查您的收件箱查看驗證郵件。如果您沒有收到郵件，請點擊下方按鈕重新發送。",
+          "verifyYourEmail": "驗證您的電子郵件",
+          "signInUsernamePlaceholder": "使用者名稱或電子郵件",
+          "usernamePlaceholder": "使用者名稱",
+          "usernameInstructions": "請使用不超過32個字元。",
+          "usernameDescription": "輸入您想用於登入的使用者名稱。",
+          "username": "使用者名稱",
+          "updatedSuccessfully": "更新成功",
+          "unlink": "解除關聯",
+          "sendVerificationCode": "發送驗證碼",
+          "twoFactorTotpLabel": "使用您的身份驗證器掃描 QR Code",
+          "twoFactorPrompt": "雙重認證",
+          "twoFactorDisabled": "雙重認證已停用",
+          "twoFactorEnabled": "雙重認證已啟用",
+          "twoFactorEnableInstructions": "請輸入您的密碼以啟用雙重認證",
+          "twoFactorDisableInstructions": "請輸入您的密碼以停用雙重認證。",
+          "twoFactorCardDescription": "為您的帳戶添加額外的安全層。",
+          "twoFactorDescription": "請輸入您的一次性密碼以繼續",
+          "twoFactorAction": "驗證碼",
+          "twoFactor": "雙重認證",
+          "trustDevice": "信任此裝置",
+          "switchAccount": "切換帳戶",
+          "security": "安全性",
+          "save": "儲存",
+          "settings": "設定",
+          "setPasswordDescription": "點擊下方按鈕接收郵件以設定您帳戶的密碼。",
+          "setPassword": "設定密碼",
+          "sessionsDescription": "管理您的活動工作階段並撤銷存取權限。",
+          "sessions": "工作階段",
+          "signUpEmail": "請檢查您的電子郵件以獲取驗證連結。",
+          "signUpDescription": "輸入您的資訊以建立帳戶",
+          "signUpAction": "建立帳戶",
+          "signUp": "註冊",
+          "signOut": "登出",
+          "signInWith": "使用以下方式登入",
+          "signInUsernameDescription": "輸入您的使用者名稱或電子郵件以登入您的帳戶",
+          "signInDescription": "輸入您的電子郵件以登入您的帳戶",
+          "signInAction": "登入",
+          "signIn": "登入",
+          "apiKey": "API 金鑰",
+          "deleteApiKeyConfirmation": "您確定要刪除此 API 金鑰嗎？",
+          "deleteApiKey": "刪除 API 金鑰",
+          "revoke": "撤銷",
+          "requestFailed": "請求失敗",
+          "resetPasswordSuccess": "密碼重設成功",
+          "resetPasswordInvalidToken": "無效的重設密碼連結",
+          "resetPasswordDescription": "在下方輸入您的新密碼",
+          "resetPasswordAction": "儲存新密碼",
+          "resetPassword": "重設密碼",
+          "resendVerificationEmail": "重新發送驗證郵件",
+          "resendCode": "重新發送驗證碼",
+          "rememberMe": "記住我",
+          "recoverAccountDescription": "請輸入備用碼以存取您的帳戶",
+          "recoverAccountAction": "恢復帳戶",
+          "recoverAccount": "恢復帳戶",
+          "providersDescription": "將您的帳戶與第三方服務關聯。",
+          "providers": "提供商",
+          "passwordsDoNotMatch": "密碼不相符",
+          "passwordRequired": "密碼是必需的",
+          "passwordPlaceholder": "密碼",
+          "password": "密碼",
+          "create": "建立",
+          "noExpiration": "永不過期",
+          "expires": "過期時間",
+          "neverExpires": "永不過期",
+          "apiKeyCreatedDescription": "請複製您的 API 金鑰並將其儲存在安全的地方。出於安全原因，我們無法再次顯示它。",
+          "apiKeyCreated": "API 金鑰已建立",
+          "apiKeyNamePlaceholder": "新 API 金鑰",
+          "createApiKeyDescription": "為您的 API 金鑰輸入一個唯一的名稱以區分其他金鑰。",
+          "createApiKey": "建立 API 金鑰",
+          "apiKeysInstructions": "產生 API 金鑰以程式化方式存取您的帳戶。",
+          "apiKeysDescription": "管理您的 API 金鑰以進行安全存取。",
+          "apiKeys": "API 金鑰",
+          "passkeysInstructions": "無需密碼即可安全存取您的帳戶。",
+          "passkeysDescription": "管理您的通行金鑰以進行安全存取。",
+          "passkeys": "通行金鑰",
+          "passkey": "通行金鑰",
+          "orContinueWith": "或繼續使用",
+          "oneTimePassword": "一次性密碼",
+          "newPasswordRequired": "新密碼是必需的",
+          "newPasswordPlaceholder": "新密碼",
+          "newPassword": "新密碼",
+          "namePlaceholder": "姓名",
+          "nameInstructions": "請使用不超過32個字元。",
+          "nameDescription": "請輸入您的全名或顯示名稱。",
+          "name": "姓名",
+          "emailOTPVerificationSent": "請檢查您的電子郵件以獲取驗證碼。",
+          "emailOTPDescription": "輸入您的電子郵件以接收驗證碼",
+          "emailOTPVerifyAction": "驗證碼",
+          "emailOTPSendAction": "發送驗證碼",
+          "emailOTP": "電子郵件驗證碼",
+          "magicLinkEmail": "請檢查您的電子郵件以獲取魔法連結",
+          "magicLinkDescription": "輸入您的電子郵件以接收魔法連結",
+          "magicLinkAction": "發送魔法連結",
+          "magicLink": "魔法連結",
+          "link": "關聯",
+          "invalidTwoFactorCookie": "無效的雙重認證 cookie",
+          "forgotPasswordLink": "忘記密碼？",
+          "forgotPasswordEmail": "請檢查您的電子郵件以獲取密碼重設連結。",
+          "forgotPasswordDescription": "輸入您的電子郵件以重設密碼",
+          "forgotPasswordAction": "發送重設連結",
+          "forgotPassword": "忘記密碼",
+          "forgotAuthenticator": "忘記身份驗證器？",
+          "isTheSame": "相同",
+          "isRequired": "是必需的",
+          "isInvalid": "無效",
+          "error": "錯誤",
+          "enable": "啟用",
+          "emailVerification": "請檢查您的電子郵件以獲取驗證連結。",
+          "emailVerifyChange": "請檢查您的電子郵件以驗證更改。",
+          "emailRequired": "電子郵件地址是必需的",
+          "emailPlaceholder": "m@example.com",
+          "emailIsTheSame": "電子郵件相同",
+          "emailInvalid": "電子郵件地址無效",
+          "emailInstructions": "請輸入有效的電子郵件地址。",
+          "emailDescription": "輸入您想用於登入的電子郵件地址。",
+          "email": "電子郵件",
+          "done": "完成",
+          "dontHaveAnAccount": "沒有帳戶？",
+          "disabledCredentialsDescription": "選擇一個提供商以登入您的帳戶",
+          "disable": "停用",
+          "deleteAccountNotFresh": "您必須最近登入才能刪除您的帳戶。",
+          "deleteAccountSuccess": "您的帳戶已被刪除。",
+          "deleteAccountVerify": "請檢查您的電子郵件以驗證帳戶刪除。",
+          "deleteAccountInstructions": "請確認刪除您的帳戶。此操作不可逆，請謹慎繼續。",
+          "deleteAccountDescription": "永久刪除您的帳戶及其所有內容。此操作不可逆，請謹慎繼續。",
+          "deleteAccount": "刪除帳戶",
+          "deleteAvatar": "刪除頭像",
+          "delete": "刪除",
+          "currentSession": "目前工作階段",
+          "currentPasswordPlaceholder": "目前密碼",
+          "currentPassword": "目前密碼",
+          "continue": "繼續",
+          "copyAllCodes": "複製所有代碼",
+          "copyToClipboard": "複製到剪貼簿",
+          "copiedToClipboard": "已複製到剪貼簿",
+          "continueWithAuthenticator": "繼續使用身份驗證器",
+          "confirmPasswordRequired": "確認密碼是必需的",
+          "confirmPasswordPlaceholder": "確認密碼",
+          "confirmPassword": "確認密碼",
+          "changePasswordSuccess": "您的密碼已更改。",
+          "changePasswordInstructions": "請使用至少8個字元。",
+          "changePasswordDescription": "輸入您的目前密碼和新密碼。",
+          "changePassword": "更改密碼",
+          "cancel": "取消",
+          "backupCodeAction": "恢復帳戶",
+          "backupCode": "備用碼",
+          "backupCodePlaceholder": "輸入您的一個備用碼。一旦使用，每個代碼只能使用一次，使用後將失效。",
+          "backupCodesDescription": "將這些備用碼儲存在安全的地方。如果您遺失了雙重認證方式，可以使用它們來存取您的帳戶。",
+          "backupCodes": "備用碼",
+          "backupCodeRequired": "備用碼是必需的",
+          "avatarInstructions": "頭像是選擇性的，但強烈建議使用。",
+          "avatarDescription": "點擊頭像從您的檔案中上傳自訂頭像。",
+          "avatar": "頭像",
+          "alreadyHaveAnAccount": "已有帳戶？",
+          "addPasskey": "新增通行金鑰",
+          "addAccount": "新增帳戶",
+          "accountsInstructions": "登入到其他帳戶。",
+          "accountsDescription": "管理您目前登入的帳戶。",
+          "accounts": "帳戶",
+          "account": "帳戶"
+        }
+      },
+      "FORMS": {
+        "ChangeEmailDialogue": {
+          "Title": "更改電子郵件"
+        },
+        "ChangePasswordDialogue": {
+          "Title": "更改密碼"
+        },
+        "ChangeUsernameDialogue": {
+          "Title": "更改使用者名稱"
+        }
+      }
+    },
+    "BUILDER": {
+      "UI": {
+        "BOARD": {
+          "GameBoard": {
+            "AddTroop": "新增部隊",
+            "SelectRuler": "選擇統帥"
+          },
+          "ResetDialog": {
+            "Cancel": "取消",
+            "Description": "這將移除棋盤上的所有部隊並重設你的聖水數量。你的羈絆和統帥選擇將被清除。",
+            "Reset": "重設",
+            "Title": "重設遊戲棋盤？"
+          },
+          "SaveBuildDialog": {
+            "Title": "儲存您的陣容",
+            "Description": "為您的陣容命名並添加描述，與社群分享",
+            "Preview": "陣容預覽",
+            "Name": "陣容名稱",
+            "NamePlaceholder": "例如：部落復仇者速攻",
+            "NameRequired": "陣容名稱是必需的",
+            "DescriptionLabel": "描述",
+            "DescriptionPlaceholder": "描述您的策略、連擊或使用這個陣容的技巧...",
+            "DescriptionHint": "支援 Markdown 格式",
+            "YouTubeUrl": "YouTube 影片連結",
+            "Tier": "等級評分",
+            "Publish": "發布陣容",
+            "PublishDescription": "讓所有人都能看到這個陣容",
+            "DraftDescription": "儲存為草稿，僅對您可見",
+            "Cancel": "取消",
+            "PublishBuild": "發布陣容",
+            "SaveDraft": "儲存為草稿",
+            "BuildPublished": "陣容發布成功！",
+            "BuildSaved": "陣容已儲存為草稿",
+            "SaveError": "儲存陣容失敗",
+            "RulerRequired": "請選擇一個統帥",
+            "TroopsRequired": "請至少新增一個部隊到棋盤"
+          }
+        },
+        "RULER": {
+          "RulerSelectorDrawer": {
+            "SelectRuler": "選擇統帥"
+          }
+        },
+        "SYNERGY": {
+          "SynergyPanel": {
+            "ActiveSynergies": "啟動的羈絆",
+            "NoActiveSynergies": "沒有啟動的羈絆"
+          }
+        },
+        "VIEW": {
+          "TroopsBuilder": {
+            "BoardIsFull": "棋盤已滿",
+            "RemoveTroops": "移除一些部隊以放置新的部隊。",
+            "SelectATroop": "選擇一個部隊"
+          }
+        }
+      }
+    },
+    "BUILDS": {
+      "UI": {
+        "BuildDetailView": {
+          "Tier": "等級",
+          "Views": "瀏覽",
+          "Composition": "陣容組成",
+          "Description": "策略指南",
+          "Video": "影片指南"
+        },
+        "CommentSection": {
+          "Comments": "留言",
+          "AddComment": "新增留言...",
+          "PostComment": "發表留言",
+          "CommentPosted": "留言發表成功",
+          "CommentError": "發表留言失敗",
+          "CommentDeleted": "留言已刪除",
+          "DeleteError": "刪除留言失敗",
+          "SignInRequired": "請登入後留言",
+          "ConfirmDelete": "確定要刪除這則留言嗎？",
+          "NoComments": "還沒有留言，成為第一個留言的人吧！",
+          "Unknown": "未知"
+        }
+      }
+    },
+    "COMPS": {
+      "TeamCompCard": {
+        "Tier": "梯度"
+      },
+      "TeamCompsList": {
+        "AllCards": "所有卡牌",
+        "AllTraits": "所有特性",
+        "Cards": "卡牌",
+        "NoCompositionsFound": "沒有找到符合篩選條件的隊伍組合。",
+        "Search": "搜尋...",
+        "Traits": "特性"
+      }
+    },
+    "HOME": {
+      "SECTIONS": {
+        "HeroSection": {
+          "Description": "尋找、構建並分享最佳合合奇兵隊伍陣容，稱霸競技場。",
+          "IntroducingBuilder": "隆重推出構建器",
+          "StartBuilding": "開始建立",
+          "Title": "最全面的合合奇兵工具",
+          "ViewComps": "檢視陣容"
+        }
+      }
+    },
+    "TIER_LIST": {
+      "UI": {
+        "TIER": {
+          "TierRow": {
+            "ClickToAddTroops": "點擊新增部隊",
+            "DropTroopsHere": "將部隊拖放到這裡"
+          }
+        },
+        "VIEW": {
+          "TierListMaker": {
+            "AddTroopsToTier": "新增部隊到 {tier} 級",
+            "Reset": "重設"
+          }
+        }
+      }
+    },
+    "TROOPS": {
+      "UI": {
+        "TroopSelect": {
+          "AllTraits": "所有特性",
+          "SearchTroops": "搜尋部隊...",
+          "Trait": "特性",
+          "All": "全部"
+        }
+      }
+    },
+    "WIKI": {
+      "UI": {
+        "TROOP": {
+          "TroopFilters": {
+            "AllTraits": "所有特性",
+            "DPS": "秒傷",
+            "ElixirCost": "聖水消耗",
+            "HP": "生命值",
+            "Name": "名稱",
+            "SearchTroops": "搜尋部隊...",
+            "Sort": "排序",
+            "SortByDPS": "排序：秒傷",
+            "SortByElixirCost": "排序：聖水消耗",
+            "SortByHP": "排序：生命值",
+            "SortByName": "排序：名稱",
+            "Trait": "特性",
+            "All": "全部"
+          }
+        }
+      }
+    }
+  },
+  "PAGES": {
+    "Builder": {
+      "Description": "在皇室戰爭的融合戰術模式中理論構建和規劃你的回合",
+      "Title": "隊伍構建器"
+    },
+    "Comps": {
+      "Description": "尋找皇室戰爭融合戰術的最佳隊伍組合",
+      "Title": "隊伍陣容"
+    },
+    "TierList": {
+      "Description": "尋找皇室戰爭融合戰術的最佳隊伍組合",
+      "Title": "梯度榜"
+    },
+    "Wiki": {
+      "Description": "瀏覽所有可用部隊及其屬性",
+      "Title": "部隊圖鑑"
+    },
+    "Waitlist": {
+      "Title": "您已加入等待名單！",
+      "Description": "歡迎來到 CR Tactics！我們正在為您準備一些特別的東西。",
+      "Message": "當 App 準備就緒時，我們會透過電子郵件通知您。早期的支持者將解鎖一個神秘禮物。",
+      "WhileYouWait": "在您等待期間：",
+      "JoinDiscord": "加入我們的 Discord 社群",
+      "ExploreBuilder": "探索隊伍構建器",
+      "BrowseTroops": "瀏覽部隊圖鑑",
+      "ThankYou": "感謝您的耐心等待！🎉"
+    }
+  }
+}

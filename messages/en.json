@@ -1,0 +1,525 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "Create, share, post, and find the strongest team with CR Tactics Builder. Be the last one standing in the arena!",
+      "Title": "CR Merge Tactics Team Builder | Clash Royale"
+    },
+    "SETTINGS": {
+      "Account": {
+        "title": "Account",
+        "description": "Manage your account settings"
+      },
+      "Security": {
+        "title": "Security",
+        "description": "Manage your security settings"
+      },
+      "Appearance": {
+        "title": "Appearance",
+        "description": "Manage your appearance settings"
+      },
+      "Layout": {
+        "title": "Settings"
+      }
+    }
+  },
+  "COMPONENTS": {
+    "LAYOUT": {
+      "Footer": {
+        "AriaLabel": {
+          "Discord": "Discord",
+          "GoHome": "go home"
+        },
+        "Copyright": "Copyright © {year} CR Tactics. All rights reserved.",
+        "Disclaimer": "This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see",
+        "FanContentPolicy": "Supercell's Fan Content Policy",
+        "PrivacyPolicy": "Privacy Policy",
+        "SeeOur": "See our",
+        "ForAdditionalDetails": "for additional details."
+      },
+      "Header": {
+        "AriaLabel": {
+          "CloseMenu": "Close Menu",
+          "OpenMenu": "Open Menu"
+        },
+        "ComingSoon": "Coming soon",
+        "Discord": "Discord",
+        "Login": "Login",
+        "Tactics": "Tactics"
+      }
+    },
+    "TroopStats": {
+      "Critical": "Critical",
+      "Damage": "Damage",
+      "HitSpeed": "Hit Speed",
+      "Range": "Range"
+    }
+  },
+  "CONFIGS": {
+    "RoutesConfig": {
+      "Builder": "Builder",
+      "Builds": "Builds",
+      "Community": "Community",
+      "TierList": "Tier List",
+      "Wiki": "Wiki"
+    },
+    "SettingsNavConfig": {
+      "account": "Account",
+      "security": "Security",
+      "appearance": "Appearance"
+    }
+  },
+  "MODULES": {
+    "AUTH": {
+      "UI": {
+        "SERVER": {
+          "EmailTemplates": {
+            "ResetPassword": {
+              "subject": "Reset your password",
+              "title": "Reset your password",
+              "message": "We received a request to reset the password for your account.",
+              "buttonText": "Reset password",
+              "expiresIn": "This link expires in 15 minutes.",
+              "ignoreMessage": "If you didn't request to reset your password, you can safely ignore this email. Someone else might have typed your email address by mistake."
+            },
+            "AccountDeletion": {
+              "subject": "Confirm Account Deletion",
+              "title": "Account Deletion Request",
+              "message": "We received a request to delete your account. This action cannot be undone and will permanently delete all your data.",
+              "buttonText": "Delete My Account",
+              "expiresIn": "This link expires in 15 minutes.",
+              "ignoreMessage": "If you didn't request to delete your account, you can safely ignore this email. Please change your password and contact support if you believe your account has been compromised."
+            },
+            "SignInOTP": {
+              "subject": "Your login OTP code",
+              "title": "Sign in to Turboitem",
+              "message": "You requested to sign in to Turboitem. Your one-time code is:",
+              "expiresIn": "This code will expire in 5 minutes.",
+              "ignoreMessage": "If you didn't request this code, please ignore this message."
+            },
+            "EmailVerification": {
+              "subject": "Verify your email address",
+              "title": "Verify your email address",
+              "message": "We need to verify your email address {email} before you can access your account. Enter the code below in your open browser window.",
+              "expiresIn": "This code will expire in 5 minutes.",
+              "ignoreMessage": "If you didn't sign up for Turboitem, you can safely ignore this email. Someone else might have typed your email address by mistake.",
+              "buttonText": "Verify email address"
+            },
+            "EmailChange": {
+              "subject": "Verify your new email address",
+              "title": "Verify your new email address",
+              "message": "We received a request to change your email address to {email}. Click the button below to verify this new email address.",
+              "buttonText": "Verify new email",
+              "expiresIn": "This link expires in 15 minutes.",
+              "ignoreMessage": "If you didn't request to change your email address, you can safely ignore this email. Please change your password and contact support if you believe your account has been compromised."
+            }
+          }
+        },
+        "AuthLocalization": {
+          "missingCaptchaResponse": "Missing CAPTCHA response",
+          "byContinuingYouAgree": "By continuing, you agree to the",
+          "protectedByRecaptcha": "This site is protected by reCAPTCHA.",
+          "termsOfService": "Terms of Service",
+          "privacyPolicy": "Privacy Policy",
+          "uploadAvatar": "Upload Avatar",
+          "passwordTooLong": "Password too long",
+          "passwordTooShort": "Password too short",
+          "sessionExpired": "Session Expired",
+          "sessionNotFresh": "Your session is not fresh. Please sign in again.",
+          "passwordInvalid": "Invalid password",
+          "invalidEmailOrPassword": "Invalid email or password",
+          "goBack": "Go back",
+          "verifyYourEmailDescription": "Please verify your email address. Check your inbox for the verification email. If you haven't received the email, click the button below to resend.",
+          "verifyYourEmail": "Verify Your Email",
+          "signInUsernamePlaceholder": "Username or email",
+          "usernamePlaceholder": "Username",
+          "usernameInstructions": "Please use 32 characters at maximum.",
+          "usernameDescription": "Enter the username you want to use to log in.",
+          "username": "Username",
+          "updatedSuccessfully": "Updated successfully",
+          "unlink": "Unlink",
+          "sendVerificationCode": "Send verification code",
+          "twoFactorTotpLabel": "Scan the QR Code with your Authenticator",
+          "twoFactorPrompt": "Two-Factor Authentication",
+          "twoFactorDisabled": "Two-Factor Authentication has been disabled",
+          "twoFactorEnabled": "Two-factor authentication has been enabled",
+          "twoFactorEnableInstructions": "Please enter your password to enable 2FA",
+          "twoFactorDisableInstructions": "Please enter your password to disable 2FA.",
+          "twoFactorCardDescription": "Add an extra layer of security to your account.",
+          "twoFactorDescription": "Please enter your one-time password to continue",
+          "twoFactorAction": "Verify code",
+          "twoFactor": "Two-Factor",
+          "trustDevice": "Trust this device",
+          "switchAccount": "Switch Account",
+          "security": "Security",
+          "save": "Save",
+          "settings": "Settings",
+          "setPasswordDescription": "Click the button below to receive an email to set up a password for your account.",
+          "setPassword": "Set Password",
+          "sessionsDescription": "Manage your active sessions and revoke access.",
+          "sessions": "Sessions",
+          "signUpEmail": "Check your email for the verification link.",
+          "signUpDescription": "Enter your information to create an account",
+          "signUpAction": "Create an account",
+          "signUp": "Sign Up",
+          "signOut": "Sign Out",
+          "signInWith": "Sign in with",
+          "signInUsernameDescription": "Enter your username or email below to login to your account",
+          "signInDescription": "Enter your email below to login to your account",
+          "signInAction": "Login",
+          "signIn": "Sign In",
+          "apiKey": "API Key",
+          "deleteApiKeyConfirmation": "Are you sure you want to delete this API key?",
+          "deleteApiKey": "Delete API Key",
+          "revoke": "Revoke",
+          "requestFailed": "Request failed",
+          "resetPasswordSuccess": "Password reset successfully",
+          "resetPasswordInvalidToken": "Invalid reset password link",
+          "resetPasswordDescription": "Enter your new password below",
+          "resetPasswordAction": "Save new password",
+          "resetPassword": "Reset Password",
+          "resendVerificationEmail": "Resend verification email",
+          "resendCode": "Resend code",
+          "rememberMe": "Remember me",
+          "recoverAccountDescription": "Please enter a backup code to access your account",
+          "recoverAccountAction": "Recover account",
+          "recoverAccount": "Recover Account",
+          "providersDescription": "Connect your account with a third-party service.",
+          "providers": "Providers",
+          "passwordsDoNotMatch": "Passwords do not match",
+          "passwordRequired": "Password is required",
+          "passwordPlaceholder": "Password",
+          "password": "Password",
+          "create": "Create",
+          "noExpiration": "No Expiration",
+          "expires": "Expires",
+          "neverExpires": "Never Expires",
+          "apiKeyCreatedDescription": "Please copy your API key and store it in a safe place. For security reasons we cannot show it again.",
+          "apiKeyCreated": "API Key Created",
+          "apiKeyNamePlaceholder": "New API Key",
+          "createApiKeyDescription": "Enter a unique name for your API key to differentiate it from other keys.",
+          "createApiKey": "Create API Key",
+          "apiKeysInstructions": "Generate API keys to access your account programmatically.",
+          "apiKeysDescription": "Manage your API keys for secure access.",
+          "apiKeys": "API Keys",
+          "passkeysInstructions": "Securely access your account without a password.",
+          "passkeysDescription": "Manage your passkeys for secure access.",
+          "passkeys": "Passkeys",
+          "passkey": "Passkey",
+          "orContinueWith": "Or continue with",
+          "oneTimePassword": "One-Time Password",
+          "newPasswordRequired": "New password is required",
+          "newPasswordPlaceholder": "New Password",
+          "newPassword": "New Password",
+          "namePlaceholder": "Name",
+          "nameInstructions": "Please use 32 characters at maximum.",
+          "nameDescription": "Please enter your full name, or a display name.",
+          "name": "Name",
+          "emailOTPVerificationSent": "Please check your email for the verification code.",
+          "emailOTPDescription": "Enter your email to receive a code",
+          "emailOTPVerifyAction": "Verify code",
+          "emailOTPSendAction": "Send code",
+          "emailOTP": "Email Code",
+          "magicLinkEmail": "Check your email for the magic link",
+          "magicLinkDescription": "Enter your email to receive a magic link",
+          "magicLinkAction": "Send magic link",
+          "magicLink": "Magic Link",
+          "link": "Link",
+          "invalidTwoFactorCookie": "Invalid two factor cookie",
+          "forgotPasswordLink": "Forgot your password?",
+          "forgotPasswordEmail": "Check your email for the password reset link.",
+          "forgotPasswordDescription": "Enter your email to reset your password",
+          "forgotPasswordAction": "Send reset link",
+          "forgotPassword": "Forgot Password",
+          "forgotAuthenticator": "Forgot authenticator?",
+          "isTheSame": "is the same",
+          "isRequired": "is required",
+          "isInvalid": "is invalid",
+          "error": "Error",
+          "enable": "Enable",
+          "emailVerification": "Please check your email for the verification link.",
+          "emailVerifyChange": "Please check your email to verify the change.",
+          "emailRequired": "Email address is required",
+          "emailPlaceholder": "m@example.com",
+          "emailIsTheSame": "Email is the same",
+          "emailInvalid": "Email address is invalid",
+          "emailInstructions": "Please enter a valid email address.",
+          "emailDescription": "Enter the email address you want to use to log in.",
+          "email": "Email",
+          "done": "Done",
+          "dontHaveAnAccount": "Don't have an account?",
+          "disabledCredentialsDescription": "Choose a provider to login to your account",
+          "disable": "Disable",
+          "deleteAccountNotFresh": "You must be recently logged in to delete your account.",
+          "deleteAccountSuccess": "Your account has been deleted.",
+          "deleteAccountVerify": "Please check your email to verify the deletion of your account.",
+          "deleteAccountInstructions": "Please confirm the deletion of your account. This action is not reversible, so please continue with caution.",
+          "deleteAccountDescription": "Permanently remove your account and all of its contents. This action is not reversible, so please continue with caution.",
+          "deleteAccount": "Delete Account",
+          "deleteAvatar": "Delete Avatar",
+          "delete": "Delete",
+          "currentSession": "Current Session",
+          "currentPasswordPlaceholder": "Current Password",
+          "currentPassword": "Current Password",
+          "continue": "Continue",
+          "copyAllCodes": "Copy all codes",
+          "copyToClipboard": "Copy to clipboard",
+          "copiedToClipboard": "Copied to clipboard",
+          "continueWithAuthenticator": "Continue with Authenticator",
+          "confirmPasswordRequired": "Confirm password is required",
+          "confirmPasswordPlaceholder": "Confirm Password",
+          "confirmPassword": "Confirm Password",
+          "changePasswordSuccess": "Your password has been changed.",
+          "changePasswordInstructions": "Please use 8 characters at minimum.",
+          "changePasswordDescription": "Enter your current password and a new password.",
+          "changePassword": "Change Password",
+          "cancel": "Cancel",
+          "backupCodeAction": "Recover account",
+          "backupCode": "Backup Code",
+          "backupCodePlaceholder": "Enter one of your backup codes. Once used, each code can only be used once and will be invalidated after use.",
+          "backupCodesDescription": "Save these backup codes in a secure place. You can use them to access your account if you lose your two-factor authentication method.",
+          "backupCodes": "Backup Codes",
+          "backupCodeRequired": "Backup code is required",
+          "avatarInstructions": "An avatar is optional but strongly recommended.",
+          "avatarDescription": "Click on the avatar to upload a custom one from your files.",
+          "avatar": "Avatar",
+          "alreadyHaveAnAccount": "Already have an account?",
+          "addPasskey": "Add Passkey",
+          "addAccount": "Add Account",
+          "accountsInstructions": "Sign in to an additional account.",
+          "accountsDescription": "Manage your currently signed in accounts.",
+          "accounts": "Accounts",
+          "account": "Account"
+        }
+      },
+      "FORMS": {
+        "ChangeEmailDialogue": {
+          "Title": "Change Email"
+        },
+        "ChangePasswordDialogue": {
+          "Title": "Change password"
+        },
+        "ChangeUsernameDialogue": {
+          "Title": "Change Username"
+        }
+      }
+    },
+    "BUILDER": {
+      "UI": {
+        "BOARD": {
+          "GameBoard": {
+            "AddTroop": "Add Troop",
+            "SelectRuler": "Select ruler"
+          },
+          "ResetDialog": {
+            "Cancel": "Cancel",
+            "Description": "This will remove all troops from the board and reset your elixir count. Your synergies and ruler selection will be cleared.",
+            "Reset": "Reset",
+            "Title": "Reset Game Board?"
+          },
+          "SaveBuildDialog": {
+            "Title": "Save Your Build",
+            "Description": "Give your build a name and description to share with the community",
+            "Preview": "Build Preview",
+            "Name": "Build Name",
+            "NamePlaceholder": "e.g., Clan Avenger Rush",
+            "NameRequired": "Build name is required",
+            "DescriptionLabel": "Description",
+            "DescriptionPlaceholder": "Describe your strategy, combos, or tips for playing this build...",
+            "DescriptionHint": "Markdown formatting is supported",
+            "YouTubeUrl": "YouTube Video URL",
+            "Tier": "Tier Rating",
+            "Publish": "Publish Build",
+            "PublishDescription": "Make this build visible to everyone",
+            "DraftDescription": "Save as draft, only visible to you",
+            "Cancel": "Cancel",
+            "PublishBuild": "Publish Build",
+            "SaveDraft": "Save as Draft",
+            "BuildPublished": "Build published successfully!",
+            "BuildSaved": "Build saved as draft",
+            "SaveError": "Failed to save build",
+            "RulerRequired": "Please select a ruler",
+            "TroopsRequired": "Please add at least one troop to the board"
+          }
+        },
+        "RULER": {
+          "RulerSelectorDrawer": {
+            "SelectRuler": "Select Ruler"
+          }
+        },
+        "SYNERGY": {
+          "SynergyPanel": {
+            "ActiveSynergies": "Active Synergies",
+            "NoActiveSynergies": "No active synergies"
+          }
+        },
+        "VIEW": {
+          "TroopsBuilder": {
+            "BoardIsFull": "Board is full",
+            "RemoveTroops": "Remove some troops to place new ones.",
+            "SelectATroop": "Select a Troop"
+          }
+        }
+      }
+    },
+    "BUILDS": {
+      "UI": {
+        "BuildDetailView": {
+          "Tier": "Tier",
+          "Views": "views",
+          "Composition": "Composition",
+          "Description": "Strategy Guide",
+          "Video": "Video Guide"
+        },
+        "CommentSection": {
+          "Comments": "Comments",
+          "AddComment": "Add a comment...",
+          "PostComment": "Post Comment",
+          "CommentPosted": "Comment posted successfully",
+          "CommentError": "Failed to post comment",
+          "CommentDeleted": "Comment deleted",
+          "DeleteError": "Failed to delete comment",
+          "SignInRequired": "Please sign in to comment",
+          "ConfirmDelete": "Are you sure you want to delete this comment?",
+          "NoComments": "No comments yet. Be the first to comment!",
+          "Unknown": "Unknown"
+        }
+      }
+    },
+    "COMPS": {
+      "TeamCompCard": {
+        "Tier": "Tier"
+      },
+      "TeamCompsList": {
+        "AllCards": "All Cards",
+        "AllTraits": "All Traits",
+        "Cards": "Cards",
+        "NoCompositionsFound": "No team compositions found matching your filters.",
+        "Search": "Search...",
+        "Traits": "Traits"
+      }
+    },
+    "HOME": {
+      "SECTIONS": {
+        "HeroSection": {
+          "Description": "Find, build, and share the best Merge Tactics teams comps to dominate the arena.",
+          "IntroducingBuilder": "Introducing Builder",
+          "StartBuilding": "Start Building",
+          "Title": "The best tool for Merge Tactics",
+          "ViewComps": "View Comps"
+        }
+      }
+    },
+    "TIER_LIST": {
+      "UI": {
+        "TIER": {
+          "TierRow": {
+            "ClickToAddTroops": "Click to add troops",
+            "DropTroopsHere": "Drop troops here"
+          }
+        },
+        "VIEW": {
+          "TierListMaker": {
+            "AddTroopsToTier": "Add Troops to {tier}",
+            "Reset": "Reset"
+          }
+        }
+      }
+    },
+    "TROOPS": {
+      "UI": {
+        "TroopSelect": {
+          "AllTraits": "All Traits",
+          "SearchTroops": "Search troops...",
+          "Trait": "Trait",
+          "All": "All"
+        }
+      }
+    },
+    "WIKI": {
+      "UI": {
+        "TROOP": {
+          "TroopFilters": {
+            "AllTraits": "All Traits",
+            "DPS": "DPS",
+            "ElixirCost": "Elixir Cost",
+            "HP": "HP",
+            "Name": "Name",
+            "SearchTroops": "Search troops...",
+            "Sort": "Sort",
+            "SortByDPS": "Sort: DPS",
+            "SortByElixirCost": "Sort: Elixir Cost",
+            "SortByHP": "Sort: HP",
+            "SortByName": "Sort: Name",
+            "Trait": "Trait",
+            "All": "All"
+          }
+        }
+      }
+    },
+    "SETTINGS": {
+      "UI": {
+        "SECTIONS": {
+          "AccountInfoSection": {
+            "Title": "Account Information",
+            "Description": "Manage your account information",
+            "AccountType": "Account Type",
+            "AccountTypeValue": "Beta",
+            "MemberSince": "Member Since",
+            "MemberSinceValue": "Jan 2024"
+          },
+          "ChangeEmailSection": {
+            "Title": "Email addresses",
+            "Description": "Manage your email addresses and verification status.",
+            "Verified": "Verified",
+            "Unverified": "Unverified",
+            "ChangeEmail": "Change email"
+          },
+          "ChangePasswordSection": {
+            "Title": "Change Password",
+            "Description": "Click the button below to change your password.",
+            "Button": "Change Password"
+          },
+          "LanguageSection": {
+            "Title": "Language",
+            "Description": "Choose your preferred language for the application."
+          },
+          "ThemeSection": {
+            "title": "Theme",
+            "description": "Choose your preferred theme for the application.",
+            "light": "Light",
+            "dark": "Dark",
+            "system": "System"
+          }
+        }
+      }
+    }
+  },
+  "PAGES": {
+    "Builder": {
+      "Description": "Theory-craft and plan your rounds in Clash Royale's Merge Tactics mode",
+      "Title": "Team Builder"
+    },
+    "Comps": {
+      "Description": "Find the best team comps for Merge Tactics in Clash Royale",
+      "Title": "Team Comps"
+    },
+    "TierList": {
+      "Description": "Find the best team comps for Merge Tactics in Clash Royale",
+      "Title": "Tier List"
+    },
+    "Wiki": {
+      "Description": "Browse all available troops and their stats",
+      "Title": "Troop Library"
+    },
+    "Waitlist": {
+      "Title": "You're on the Waitlist!",
+      "Description": "Welcome to CR Tactics! We're preparing something special for you.",
+      "Message": "We'll notify you by email when the app is ready. Early supporters will unlock a special mystery gift.",
+      "WhileYouWait": "While you wait:",
+      "JoinDiscord": "Join our Discord Community",
+      "ExploreBuilder": "Explore the Team Builder",
+      "BrowseTroops": "Browse Troop Library",
+      "ThankYou": "Thank you for your patience! 🎉"
+    }
+  }
+}

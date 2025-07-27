@@ -1,0 +1,466 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "Crea, comparte, publica y encuentra el equipo más fuerte con CR Tactics Builder. ¡Sé el último en pie en la arena!",
+      "Title": "CR Merge Tactics Constructor de Equipos | Clash Royale"
+    }
+  },
+  "COMPONENTS": {
+    "LAYOUT": {
+      "Footer": {
+        "AriaLabel": {
+          "Discord": "Discord",
+          "GoHome": "ir a inicio"
+        },
+        "Copyright": "Copyright © {year} CR Tactics. Todos los derechos reservados.",
+        "Disclaimer": "Este contenido no está afiliado, respaldado, patrocinado o aprobado específicamente por Supercell y Supercell no es responsable del mismo. Para más información consulte",
+        "FanContentPolicy": "Política de Contenido de Fans de Supercell",
+        "PrivacyPolicy": "Política de Privacidad",
+        "SeeOur": "Consulte nuestra",
+        "ForAdditionalDetails": "para más detalles."
+      },
+      "Header": {
+        "AriaLabel": {
+          "CloseMenu": "Cerrar Menú",
+          "OpenMenu": "Abrir Menú"
+        },
+        "ComingSoon": "Próximamente",
+        "Discord": "Discord",
+        "Login": "Iniciar Sesión",
+        "Tactics": "Tácticas"
+      }
+    },
+    "TroopStats": {
+      "Critical": "Crítico",
+      "Damage": "Daño",
+      "HitSpeed": "Velocidad de Ataque",
+      "Range": "Alcance"
+    }
+  },
+  "CONFIGS": {
+    "RoutesConfig": {
+      "Builder": "Constructor",
+      "Builds": "Composiciones",
+      "Community": "Comunidad",
+      "TierList": "Lista de Niveles",
+      "Wiki": "Wiki"
+    }
+  },
+  "MODULES": {
+    "AUTH": {
+      "UI": {
+        "SERVER": {
+          "EmailTemplates": {
+            "ResetPassword": {
+              "subject": "Restablecer tu contraseña",
+              "title": "Restablecer tu contraseña",
+              "message": "Hemos recibido una solicitud para restablecer la contraseña de tu cuenta.",
+              "buttonText": "Restablecer contraseña",
+              "expiresIn": "Este enlace expira en 15 minutos.",
+              "ignoreMessage": "Si no solicitaste restablecer tu contraseña, puedes ignorar este correo de forma segura. Es posible que alguien más haya escrito tu dirección de correo por error."
+            },
+            "AccountDeletion": {
+              "subject": "Confirmar Eliminación de Cuenta",
+              "title": "Solicitud de Eliminación de Cuenta",
+              "message": "Hemos recibido una solicitud para eliminar tu cuenta. Esta acción no se puede deshacer y eliminará permanentemente todos tus datos.",
+              "buttonText": "Eliminar Mi Cuenta",
+              "expiresIn": "Este enlace expira en 15 minutos.",
+              "ignoreMessage": "Si no solicitaste eliminar tu cuenta, puedes ignorar este correo de forma segura. Cambia tu contraseña y contacta con soporte si crees que tu cuenta ha sido comprometida."
+            },
+            "SignInOTP": {
+              "subject": "Tu código OTP de inicio de sesión",
+              "title": "Iniciar sesión en Turboitem",
+              "message": "Solicitaste iniciar sesión en Turboitem. Tu código único es:",
+              "expiresIn": "Este código expirará en 5 minutos.",
+              "ignoreMessage": "Si no solicitaste este código, por favor ignora este mensaje."
+            },
+            "EmailVerification": {
+              "subject": "Verifica tu dirección de correo",
+              "title": "Verifica tu dirección de correo",
+              "message": "Necesitamos verificar tu dirección de correo {email} antes de que puedas acceder a tu cuenta. Ingresa el código a continuación en tu ventana de navegador abierta.",
+              "expiresIn": "Este código expirará en 5 minutos.",
+              "ignoreMessage": "Si no te registraste en Turboitem, puedes ignorar este correo de forma segura. Es posible que alguien más haya escrito tu dirección de correo por error.",
+              "buttonText": "Verificar dirección de correo"
+            },
+            "EmailChange": {
+              "subject": "Verifica tu nueva dirección de correo",
+              "title": "Verifica tu nueva dirección de correo",
+              "message": "Hemos recibido una solicitud para cambiar tu dirección de correo a {email}. Haz clic en el botón a continuación para verificar esta nueva dirección de correo.",
+              "buttonText": "Verificar nuevo correo",
+              "expiresIn": "Este enlace expira en 15 minutos.",
+              "ignoreMessage": "Si no solicitaste cambiar tu dirección de correo, puedes ignorar este correo de forma segura. Cambia tu contraseña y contacta con soporte si crees que tu cuenta ha sido comprometida."
+            }
+          }
+        },
+        "AuthLocalization": {
+          "missingCaptchaResponse": "Falta la respuesta CAPTCHA",
+          "byContinuingYouAgree": "Al continuar, aceptas los",
+          "protectedByRecaptcha": "Este sitio está protegido por reCAPTCHA.",
+          "termsOfService": "Términos de Servicio",
+          "privacyPolicy": "Política de Privacidad",
+          "uploadAvatar": "Subir Avatar",
+          "passwordTooLong": "Contraseña demasiado larga",
+          "passwordTooShort": "Contraseña demasiado corta",
+          "sessionExpired": "Sesión Expirada",
+          "sessionNotFresh": "Tu sesión no está actualizada. Por favor inicia sesión nuevamente.",
+          "passwordInvalid": "Contraseña inválida",
+          "invalidEmailOrPassword": "Correo o contraseña inválidos",
+          "goBack": "Volver",
+          "verifyYourEmailDescription": "Por favor verifica tu dirección de correo. Revisa tu bandeja de entrada para el correo de verificación. Si no has recibido el correo, haz clic en el botón a continuación para reenviar.",
+          "verifyYourEmail": "Verifica Tu Correo",
+          "signInUsernamePlaceholder": "Nombre de usuario o correo",
+          "usernamePlaceholder": "Nombre de usuario",
+          "usernameInstructions": "Por favor usa un máximo de 32 caracteres.",
+          "usernameDescription": "Ingresa el nombre de usuario que quieres usar para iniciar sesión.",
+          "username": "Nombre de usuario",
+          "updatedSuccessfully": "Actualizado exitosamente",
+          "unlink": "Desvincular",
+          "sendVerificationCode": "Enviar código de verificación",
+          "twoFactorTotpLabel": "Escanea el código QR con tu Autenticador",
+          "twoFactorPrompt": "Autenticación de Dos Factores",
+          "twoFactorDisabled": "La Autenticación de Dos Factores ha sido desactivada",
+          "twoFactorEnabled": "La autenticación de dos factores ha sido activada",
+          "twoFactorEnableInstructions": "Por favor ingresa tu contraseña para activar 2FA",
+          "twoFactorDisableInstructions": "Por favor ingresa tu contraseña para desactivar 2FA.",
+          "twoFactorCardDescription": "Añade una capa extra de seguridad a tu cuenta.",
+          "twoFactorDescription": "Por favor ingresa tu contraseña de un solo uso para continuar",
+          "twoFactorAction": "Verificar código",
+          "twoFactor": "Dos Factores",
+          "trustDevice": "Confiar en este dispositivo",
+          "switchAccount": "Cambiar Cuenta",
+          "security": "Seguridad",
+          "save": "Guardar",
+          "settings": "Configuración",
+          "setPasswordDescription": "Haz clic en el botón a continuación para recibir un correo para configurar una contraseña para tu cuenta.",
+          "setPassword": "Establecer Contraseña",
+          "sessionsDescription": "Gestiona tus sesiones activas y revoca el acceso.",
+          "sessions": "Sesiones",
+          "signUpEmail": "Revisa tu correo para el enlace de verificación.",
+          "signUpDescription": "Ingresa tu información para crear una cuenta",
+          "signUpAction": "Crear una cuenta",
+          "signUp": "Registrarse",
+          "signOut": "Cerrar Sesión",
+          "signInWith": "Iniciar sesión con",
+          "signInUsernameDescription": "Ingresa tu nombre de usuario o correo a continuación para iniciar sesión en tu cuenta",
+          "signInDescription": "Ingresa tu correo a continuación para iniciar sesión en tu cuenta",
+          "signInAction": "Iniciar sesión",
+          "signIn": "Iniciar Sesión",
+          "apiKey": "Clave API",
+          "deleteApiKeyConfirmation": "¿Estás seguro de que quieres eliminar esta clave API?",
+          "deleteApiKey": "Eliminar Clave API",
+          "revoke": "Revocar",
+          "requestFailed": "Solicitud fallida",
+          "resetPasswordSuccess": "Contraseña restablecida exitosamente",
+          "resetPasswordInvalidToken": "Enlace de restablecimiento de contraseña inválido",
+          "resetPasswordDescription": "Ingresa tu nueva contraseña a continuación",
+          "resetPasswordAction": "Guardar nueva contraseña",
+          "resetPassword": "Restablecer Contraseña",
+          "resendVerificationEmail": "Reenviar correo de verificación",
+          "resendCode": "Reenviar código",
+          "rememberMe": "Recordarme",
+          "recoverAccountDescription": "Por favor ingresa un código de respaldo para acceder a tu cuenta",
+          "recoverAccountAction": "Recuperar cuenta",
+          "recoverAccount": "Recuperar Cuenta",
+          "providersDescription": "Conecta tu cuenta con un servicio de terceros.",
+          "providers": "Proveedores",
+          "passwordsDoNotMatch": "Las contraseñas no coinciden",
+          "passwordRequired": "La contraseña es requerida",
+          "passwordPlaceholder": "Contraseña",
+          "password": "Contraseña",
+          "create": "Crear",
+          "noExpiration": "Sin Expiración",
+          "expires": "Expira",
+          "neverExpires": "Nunca Expira",
+          "apiKeyCreatedDescription": "Por favor copia tu clave API y guárdala en un lugar seguro. Por razones de seguridad no podemos mostrarla nuevamente.",
+          "apiKeyCreated": "Clave API Creada",
+          "apiKeyNamePlaceholder": "Nueva Clave API",
+          "createApiKeyDescription": "Ingresa un nombre único para tu clave API para diferenciarla de otras claves.",
+          "createApiKey": "Crear Clave API",
+          "apiKeysInstructions": "Genera claves API para acceder a tu cuenta programáticamente.",
+          "apiKeysDescription": "Gestiona tus claves API para acceso seguro.",
+          "apiKeys": "Claves API",
+          "passkeysInstructions": "Accede de forma segura a tu cuenta sin contraseña.",
+          "passkeysDescription": "Gestiona tus llaves de acceso para acceso seguro.",
+          "passkeys": "Llaves de acceso",
+          "passkey": "Llave de acceso",
+          "orContinueWith": "O continuar con",
+          "oneTimePassword": "Contraseña de Un Solo Uso",
+          "newPasswordRequired": "La nueva contraseña es requerida",
+          "newPasswordPlaceholder": "Nueva Contraseña",
+          "newPassword": "Nueva Contraseña",
+          "namePlaceholder": "Nombre",
+          "nameInstructions": "Por favor usa un máximo de 32 caracteres.",
+          "nameDescription": "Por favor ingresa tu nombre completo o un nombre para mostrar.",
+          "name": "Nombre",
+          "emailOTPVerificationSent": "Por favor revisa tu correo para el código de verificación.",
+          "emailOTPDescription": "Ingresa tu correo para recibir un código",
+          "emailOTPVerifyAction": "Verificar código",
+          "emailOTPSendAction": "Enviar código",
+          "emailOTP": "Código de Correo",
+          "magicLinkEmail": "Revisa tu correo para el enlace mágico",
+          "magicLinkDescription": "Ingresa tu correo para recibir un enlace mágico",
+          "magicLinkAction": "Enviar enlace mágico",
+          "magicLink": "Enlace Mágico",
+          "link": "Enlace",
+          "invalidTwoFactorCookie": "Cookie de dos factores inválida",
+          "forgotPasswordLink": "¿Olvidaste tu contraseña?",
+          "forgotPasswordEmail": "Revisa tu correo para el enlace de restablecimiento de contraseña.",
+          "forgotPasswordDescription": "Ingresa tu correo para restablecer tu contraseña",
+          "forgotPasswordAction": "Enviar enlace de restablecimiento",
+          "forgotPassword": "Olvidé mi Contraseña",
+          "forgotAuthenticator": "¿Olvidaste el autenticador?",
+          "isTheSame": "es igual",
+          "isRequired": "es requerido",
+          "isInvalid": "es inválido",
+          "error": "Error",
+          "enable": "Activar",
+          "emailVerification": "Por favor revisa tu correo para el enlace de verificación.",
+          "emailVerifyChange": "Por favor revisa tu correo para verificar el cambio.",
+          "emailRequired": "La dirección de correo es requerida",
+          "emailPlaceholder": "m@ejemplo.com",
+          "emailIsTheSame": "El correo es el mismo",
+          "emailInvalid": "La dirección de correo es inválida",
+          "emailInstructions": "Por favor ingresa una dirección de correo válida.",
+          "emailDescription": "Ingresa la dirección de correo que quieres usar para iniciar sesión.",
+          "email": "Correo",
+          "done": "Hecho",
+          "dontHaveAnAccount": "¿No tienes una cuenta?",
+          "disabledCredentialsDescription": "Elige un proveedor para iniciar sesión en tu cuenta",
+          "disable": "Desactivar",
+          "deleteAccountNotFresh": "Debes haber iniciado sesión recientemente para eliminar tu cuenta.",
+          "deleteAccountSuccess": "Tu cuenta ha sido eliminada.",
+          "deleteAccountVerify": "Por favor revisa tu correo para verificar la eliminación de tu cuenta.",
+          "deleteAccountInstructions": "Por favor confirma la eliminación de tu cuenta. Esta acción no es reversible, así que continúa con precaución.",
+          "deleteAccountDescription": "Elimina permanentemente tu cuenta y todo su contenido. Esta acción no es reversible, así que continúa con precaución.",
+          "deleteAccount": "Eliminar Cuenta",
+          "deleteAvatar": "Eliminar Avatar",
+          "delete": "Eliminar",
+          "currentSession": "Sesión Actual",
+          "currentPasswordPlaceholder": "Contraseña Actual",
+          "currentPassword": "Contraseña Actual",
+          "continue": "Continuar",
+          "copyAllCodes": "Copiar todos los códigos",
+          "copyToClipboard": "Copiar al portapapeles",
+          "copiedToClipboard": "Copiado al portapapeles",
+          "continueWithAuthenticator": "Continuar con Autenticador",
+          "confirmPasswordRequired": "La confirmación de contraseña es requerida",
+          "confirmPasswordPlaceholder": "Confirmar Contraseña",
+          "confirmPassword": "Confirmar Contraseña",
+          "changePasswordSuccess": "Tu contraseña ha sido cambiada.",
+          "changePasswordInstructions": "Por favor usa un mínimo de 8 caracteres.",
+          "changePasswordDescription": "Ingresa tu contraseña actual y una nueva contraseña.",
+          "changePassword": "Cambiar Contraseña",
+          "cancel": "Cancelar",
+          "backupCodeAction": "Recuperar cuenta",
+          "backupCode": "Código de Respaldo",
+          "backupCodePlaceholder": "Ingresa uno de tus códigos de respaldo. Una vez usado, cada código solo puede usarse una vez y se invalidará después de su uso.",
+          "backupCodesDescription": "Guarda estos códigos de respaldo en un lugar seguro. Puedes usarlos para acceder a tu cuenta si pierdes tu método de autenticación de dos factores.",
+          "backupCodes": "Códigos de Respaldo",
+          "backupCodeRequired": "El código de respaldo es requerido",
+          "avatarInstructions": "Un avatar es opcional pero muy recomendado.",
+          "avatarDescription": "Haz clic en el avatar para subir uno personalizado desde tus archivos.",
+          "avatar": "Avatar",
+          "alreadyHaveAnAccount": "¿Ya tienes una cuenta?",
+          "addPasskey": "Añadir Llave de Acceso",
+          "addAccount": "Añadir Cuenta",
+          "accountsInstructions": "Inicia sesión en una cuenta adicional.",
+          "accountsDescription": "Gestiona tus cuentas actualmente conectadas.",
+          "accounts": "Cuentas",
+          "account": "Cuenta"
+        }
+      },
+      "FORMS": {
+        "ChangeEmailDialogue": {
+          "Title": "Cambiar Correo"
+        },
+        "ChangePasswordDialogue": {
+          "Title": "Cambiar contraseña"
+        },
+        "ChangeUsernameDialogue": {
+          "Title": "Cambiar Nombre de Usuario"
+        }
+      }
+    },
+    "BUILDER": {
+      "UI": {
+        "BOARD": {
+          "GameBoard": {
+            "AddTroop": "Añadir Tropa",
+            "SelectRuler": "Seleccionar gobernante"
+          },
+          "ResetDialog": {
+            "Cancel": "Cancelar",
+            "Description": "Esto eliminará todas las tropas del tablero y reiniciará tu cuenta de elixir. Tus sinergias y selección de gobernante serán borradas.",
+            "Reset": "Reiniciar",
+            "Title": "¿Reiniciar Tablero de Juego?"
+          },
+          "SaveBuildDialog": {
+            "Title": "Guardar Tu Composición",
+            "Description": "Dale un nombre y descripción a tu composición para compartir con la comunidad",
+            "Preview": "Vista Previa de la Composición",
+            "Name": "Nombre de la Composición",
+            "NamePlaceholder": "ej., Rush Vengador del Clan",
+            "NameRequired": "El nombre de la composición es requerido",
+            "DescriptionLabel": "Descripción",
+            "DescriptionPlaceholder": "Describe tu estrategia, combos o consejos para jugar esta composición...",
+            "DescriptionHint": "Se admite formato Markdown",
+            "YouTubeUrl": "URL del Video de YouTube",
+            "Tier": "Calificación de Nivel",
+            "Publish": "Publicar Composición",
+            "PublishDescription": "Hacer esta composición visible para todos",
+            "DraftDescription": "Guardar como borrador, solo visible para ti",
+            "Cancel": "Cancelar",
+            "PublishBuild": "Publicar Composición",
+            "SaveDraft": "Guardar como Borrador",
+            "BuildPublished": "¡Composición publicada exitosamente!",
+            "BuildSaved": "Composición guardada como borrador",
+            "SaveError": "Error al guardar la composición",
+            "RulerRequired": "Por favor selecciona un gobernante",
+            "TroopsRequired": "Por favor añade al menos una tropa al tablero"
+          }
+        },
+        "RULER": {
+          "RulerSelectorDrawer": {
+            "SelectRuler": "Seleccionar Gobernante"
+          }
+        },
+        "SYNERGY": {
+          "SynergyPanel": {
+            "ActiveSynergies": "Sinergias Activas",
+            "NoActiveSynergies": "Sin sinergias activas"
+          }
+        },
+        "VIEW": {
+          "TroopsBuilder": {
+            "BoardIsFull": "El tablero está lleno",
+            "RemoveTroops": "Elimina algunas tropas para colocar nuevas.",
+            "SelectATroop": "Selecciona una Tropa"
+          }
+        }
+      }
+    },
+    "BUILDS": {
+      "UI": {
+        "BuildDetailView": {
+          "Tier": "Nivel",
+          "Views": "vistas",
+          "Composition": "Composición",
+          "Description": "Guía de Estrategia",
+          "Video": "Guía en Video"
+        },
+        "CommentSection": {
+          "Comments": "Comentarios",
+          "AddComment": "Añadir un comentario...",
+          "PostComment": "Publicar Comentario",
+          "CommentPosted": "Comentario publicado exitosamente",
+          "CommentError": "Error al publicar comentario",
+          "CommentDeleted": "Comentario eliminado",
+          "DeleteError": "Error al eliminar comentario",
+          "SignInRequired": "Por favor inicia sesión para comentar",
+          "ConfirmDelete": "¿Estás seguro de que quieres eliminar este comentario?",
+          "NoComments": "No hay comentarios aún. ¡Sé el primero en comentar!",
+          "Unknown": "Desconocido"
+        }
+      }
+    },
+    "COMPS": {
+      "TeamCompCard": {
+        "Tier": "Nivel"
+      },
+      "TeamCompsList": {
+        "AllCards": "Todas las Cartas",
+        "AllTraits": "Todos los Rasgos",
+        "Cards": "Cartas",
+        "NoCompositionsFound": "No se encontraron composiciones de equipo que coincidan con tus filtros.",
+        "Search": "Buscar...",
+        "Traits": "Rasgos"
+      }
+    },
+    "HOME": {
+      "SECTIONS": {
+        "HeroSection": {
+          "Description": "Encuentra, construye y comparte las mejores composiciones de equipos de Merge Tactics para dominar la arena.",
+          "IntroducingBuilder": "Presentando el Constructor",
+          "StartBuilding": "Comenzar a Construir",
+          "Title": "La mejor herramienta para Merge Tactics",
+          "ViewComps": "Ver Composiciones"
+        }
+      }
+    },
+    "TIER_LIST": {
+      "UI": {
+        "TIER": {
+          "TierRow": {
+            "ClickToAddTroops": "Clic para añadir tropas",
+            "DropTroopsHere": "Suelta las tropas aquí"
+          }
+        },
+        "VIEW": {
+          "TierListMaker": {
+            "AddTroopsToTier": "Añadir Tropas a {tier}",
+            "Reset": "Reiniciar"
+          }
+        }
+      }
+    },
+    "TROOPS": {
+      "UI": {
+        "TroopSelect": {
+          "AllTraits": "Todos los Rasgos",
+          "SearchTroops": "Buscar tropas...",
+          "Trait": "Rasgo",
+          "All": "Todos"
+        }
+      }
+    },
+    "WIKI": {
+      "UI": {
+        "TROOP": {
+          "TroopFilters": {
+            "AllTraits": "Todos los Rasgos",
+            "DPS": "DPS",
+            "ElixirCost": "Costo de Elixir",
+            "HP": "HP",
+            "Name": "Nombre",
+            "SearchTroops": "Buscar tropas...",
+            "Sort": "Ordenar",
+            "SortByDPS": "Ordenar: DPS",
+            "SortByElixirCost": "Ordenar: Costo de Elixir",
+            "SortByHP": "Ordenar: HP",
+            "SortByName": "Ordenar: Nombre",
+            "Trait": "Rasgo",
+            "All": "Todos"
+          }
+        }
+      }
+    }
+  },
+  "PAGES": {
+    "Builder": {
+      "Description": "Teoriza y planifica tus rondas en el modo Merge Tactics de Clash Royale",
+      "Title": "Constructor de Equipos"
+    },
+    "Comps": {
+      "Description": "Encuentra las mejores composiciones de equipo para Merge Tactics en Clash Royale",
+      "Title": "Composiciones de Equipo"
+    },
+    "TierList": {
+      "Description": "Encuentra las mejores composiciones de equipo para Merge Tactics en Clash Royale",
+      "Title": "Lista de Niveles"
+    },
+    "Wiki": {
+      "Description": "Explora todas las tropas disponibles y sus estadísticas",
+      "Title": "Biblioteca de Tropas"
+    },
+    "Waitlist": {
+      "Title": "¡Estás en la Lista de Espera!",
+      "Description": "¡Bienvenido a CR Tactics! Estamos preparando algo especial para ti.",
+      "Message": "Te notificaremos por correo cuando la aplicación esté lista. Los primeros partidarios desbloquearán un regalo misterioso especial.",
+      "WhileYouWait": "Mientras esperas:",
+      "JoinDiscord": "Únete a nuestra Comunidad de Discord",
+      "ExploreBuilder": "Explora el Constructor de Equipos",
+      "BrowseTroops": "Explora la Biblioteca de Tropas",
+      "ThankYou": "¡Gracias por tu paciencia! 🎉"
+    }
+  }
+}
