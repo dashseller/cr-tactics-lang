@@ -1,0 +1,25 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "Create, share, post, and find the strongest team with CR Tactics Builder. Be the last one standing in the arena!",
+      "Title": "CR Merge Tactics Team Builder | Clash Royale"
+    },
+    "SETTINGS": {
+      "Account": {
+        "title": "Account",
+        "description": "Manage your account settings"
+      },
+      "Security": {
+        "title": "Security",
+        "description": "Manage your security settings"
+      },
+      "Appearance": {
+        "title": "Appearance",
+        "description": "Manage your appearance settings"
+      },
+      "Layout": {
+        "title": "Settings"
+      }
+    }
+  }
+}
