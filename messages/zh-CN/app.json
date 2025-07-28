@@ -1,0 +1,25 @@
+{
+  "APP": {
+    "Layout": {
+      "MetaDescription": "使用 CR 战术生成器创建、分享、发布并寻找最强队伍。成为竞技场上最后的幸存者！",
+      "Title": "CR 合并战术团队建设 | Clash Royale"
+    },
+    "SETTINGS": {
+      "Account": {
+        "title": "帐户",
+        "description": "管理您的帐户设置"
+      },
+      "Security": {
+        "title": "安全",
+        "description": "管理您的安全设置"
+      },
+      "Appearance": {
+        "title": "外貌",
+        "description": "管理你的外观设置"
+      },
+      "Layout": {
+        "title": "设置"
+      }
+    }
+  }
+}
